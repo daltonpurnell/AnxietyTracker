@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AFNetworking.h"
-#import "NetworkController.h"
 #import "WikipediaHelper.h"
 
 @interface GeneralInfoViewController : UIViewController <WikipediaHelperDelegate>

@@ -24,7 +24,7 @@
     wikiHelper.apiUrl = @"http://en.wikipedia.org";
     wikiHelper.delegate = self;
     
-    NSString *searchWord = @"Anxiety";
+    NSString *searchWord = @"Anxiety+disorder";
 //    titleLabel.text = searchWord;
     
     [wikiHelper fetchArticle:searchWord];
