@@ -24,12 +24,14 @@
     wikiHelper.apiUrl = @"http://en.wikipedia.org";
     wikiHelper.delegate = self;
     
-    NSString *searchWord = @"Elephant";
+    NSString *searchWord = @"Anxiety";
 //    titleLabel.text = searchWord;
     
     [wikiHelper fetchArticle:searchWord];
     [self.loadingActivity startAnimating];
     self.loadingActivity.hidden = FALSE;
+    
+    self.imageView.hidden = YES;
     
     
 }
