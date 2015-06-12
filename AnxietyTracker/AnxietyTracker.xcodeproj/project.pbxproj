@@ -19,6 +19,8 @@
 		CFE362161B2B83D6003323A7 /* GetHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362151B2B83D6003323A7 /* GetHelpViewController.m */; };
 		CFE362191B2B83E6003323A7 /* ForumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362181B2B83E6003323A7 /* ForumsViewController.m */; };
 		CFE3621C1B2B8412003323A7 /* OptionsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3621B1B2B8412003323A7 /* OptionsTableView.m */; };
+		CFE3621F1B2B8821003323A7 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3621E1B2B8821003323A7 /* Entry.m */; };
+		CFE362221B2B883A003323A7 /* Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362211B2B883A003323A7 /* Appearance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		CFE362181B2B83E6003323A7 /* ForumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumsViewController.m; sourceTree = "<group>"; };
 		CFE3621A1B2B8412003323A7 /* OptionsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsTableView.h; sourceTree = "<group>"; };
 		CFE3621B1B2B8412003323A7 /* OptionsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsTableView.m; sourceTree = "<group>"; };
+		CFE3621D1B2B8821003323A7 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		CFE3621E1B2B8821003323A7 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		CFE362201B2B883A003323A7 /* Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appearance.h; sourceTree = "<group>"; };
+		CFE362211B2B883A003323A7 /* Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appearance.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,10 @@
 		CFE361E11B2B810C003323A7 /* AnxietyTracker */ = {
 			isa = PBXGroup;
 			children = (
+				CFE3621D1B2B8821003323A7 /* Entry.h */,
+				CFE3621E1B2B8821003323A7 /* Entry.m */,
+				CFE362201B2B883A003323A7 /* Appearance.h */,
+				CFE362211B2B883A003323A7 /* Appearance.m */,
 				CFE361E61B2B810C003323A7 /* AppDelegate.h */,
 				CFE361E71B2B810C003323A7 /* AppDelegate.m */,
 				CFE3620B1B2B837B003323A7 /* GeneralInfoViewController.h */,
@@ -247,11 +257,13 @@
 				CFE362131B2B83C6003323A7 /* TherapyViewController.m in Sources */,
 				CFE362101B2B83B1003323A7 /* TrackViewController.m in Sources */,
 				CFE361E81B2B810C003323A7 /* AppDelegate.m in Sources */,
+				CFE3621F1B2B8821003323A7 /* Entry.m in Sources */,
 				CFE3620D1B2B837B003323A7 /* GeneralInfoViewController.m in Sources */,
 				CFE3621C1B2B8412003323A7 /* OptionsTableView.m in Sources */,
 				CFE362191B2B83E6003323A7 /* ForumsViewController.m in Sources */,
 				CFE362161B2B83D6003323A7 /* GetHelpViewController.m in Sources */,
 				CFE361E51B2B810C003323A7 /* main.m in Sources */,
+				CFE362221B2B883A003323A7 /* Appearance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
