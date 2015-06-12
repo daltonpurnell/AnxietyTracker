@@ -13,45 +13,44 @@
 @end
 
 @implementation GeneralInfoViewController
+//@synthesize imageView, webView, loadingActivity;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.tableView.dataSource = self;
-    self.tableView.delegate = self;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    WikipediaHelper *wikiHelper = [[WikipediaHelper alloc] init];
+    wikiHelper.apiUrl = @"http://en.wikipedia.org";
+    wikiHelper.delegate = self;
     
-    return 1;
-}
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *searchWord = @"Elephant";
+//    titleLabel.text = searchWord;
+    
+    [wikiHelper fetchArticle:searchWord];
+    [self.loadingActivity startAnimating];
+    self.loadingActivity.hidden = FALSE;
     
     
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"identifier" forIndexPath:indexPath];
+- (void)dataLoaded:(NSString *)htmlPage withUrlMainImage:(NSString *)urlMainImage {
     
-    // Configure the cell...
+    if(![urlMainImage isEqualToString:@""]) {
+        NSData *imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: urlMainImage]];
+        UIImage *image = [UIImage imageWithData:imageData];
+        self.imageView.image = image;
+    }
     
-    return cell;
+    [self.loadingActivity stopAnimating];
+    self.loadingActivity.hidden = TRUE;
+    
+    [self.webView loadHTMLString:htmlPage baseURL:nil];
 }
-
 
 /*
 #pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.

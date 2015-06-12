@@ -7,8 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AFNetworking.h"
+#import "NetworkController.h"
+#import "WikipediaHelper.h"
 
-@interface GeneralInfoViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@interface GeneralInfoViewController : UIViewController <WikipediaHelperDelegate>
+//{
+//    IBOutlet UIImageView *imageView;
+//    IBOutlet UIWebView *webView;
+//}
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingActivity;
 
 @end

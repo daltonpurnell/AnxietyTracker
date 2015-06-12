@@ -31,6 +31,7 @@
 		CFE362401B2B89FD003323A7 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362351B2B89FD003323A7 /* AFURLRequestSerialization.m */; };
 		CFE362411B2B89FD003323A7 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362371B2B89FD003323A7 /* AFURLResponseSerialization.m */; };
 		CFE362421B2B89FD003323A7 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362391B2B89FD003323A7 /* AFURLSessionManager.m */; };
+		CFE362451B2B8BEF003323A7 /* WikipediaHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362441B2B8BEF003323A7 /* WikipediaHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		CFE362371B2B89FD003323A7 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		CFE362381B2B89FD003323A7 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		CFE362391B2B89FD003323A7 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		CFE362431B2B8BEF003323A7 /* WikipediaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikipediaHelper.h; sourceTree = "<group>"; };
+		CFE362441B2B8BEF003323A7 /* WikipediaHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikipediaHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 				CFE362181B2B83E6003323A7 /* ForumsViewController.m */,
 				CFE3621A1B2B8412003323A7 /* OptionsTableView.h */,
 				CFE3621B1B2B8412003323A7 /* OptionsTableView.m */,
+				CFE362431B2B8BEF003323A7 /* WikipediaHelper.h */,
+				CFE362441B2B8BEF003323A7 /* WikipediaHelper.m */,
 				CFE361F21B2B810C003323A7 /* Images.xcassets */,
 				CFE361F41B2B810C003323A7 /* LaunchScreen.xib */,
 				CFE361EF1B2B810C003323A7 /* Main.storyboard */,
@@ -326,6 +331,7 @@
 				CFE3621C1B2B8412003323A7 /* OptionsTableView.m in Sources */,
 				CFE362411B2B89FD003323A7 /* AFURLResponseSerialization.m in Sources */,
 				CFE362401B2B89FD003323A7 /* AFURLRequestSerialization.m in Sources */,
+				CFE362451B2B8BEF003323A7 /* WikipediaHelper.m in Sources */,
 				CFE3623F1B2B89FD003323A7 /* AFURLConnectionOperation.m in Sources */,
 				CFE3623B1B2B89FD003323A7 /* AFHTTPRequestOperationManager.m in Sources */,
 				CFE362191B2B83E6003323A7 /* ForumsViewController.m in Sources */,
