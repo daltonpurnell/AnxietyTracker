@@ -90,9 +90,9 @@
 				CFE361EA1B2B810C003323A7 /* FirstViewController.m */,
 				CFE361EC1B2B810C003323A7 /* SecondViewController.h */,
 				CFE361ED1B2B810C003323A7 /* SecondViewController.m */,
-				CFE361EF1B2B810C003323A7 /* Main.storyboard */,
 				CFE361F21B2B810C003323A7 /* Images.xcassets */,
 				CFE361F41B2B810C003323A7 /* LaunchScreen.xib */,
+				CFE361EF1B2B810C003323A7 /* Main.storyboard */,
 				CFE361E21B2B810C003323A7 /* Supporting Files */,
 			);
 			path = AnxietyTracker;
