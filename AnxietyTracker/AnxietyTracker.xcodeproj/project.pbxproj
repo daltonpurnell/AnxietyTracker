@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		CFE361E51B2B810C003323A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE361E41B2B810C003323A7 /* main.m */; };
 		CFE361E81B2B810C003323A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE361E71B2B810C003323A7 /* AppDelegate.m */; };
-		CFE361EB1B2B810C003323A7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE361EA1B2B810C003323A7 /* FirstViewController.m */; };
-		CFE361EE1B2B810C003323A7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE361ED1B2B810C003323A7 /* SecondViewController.m */; };
 		CFE361F11B2B810C003323A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE361EF1B2B810C003323A7 /* Main.storyboard */; };
 		CFE361F31B2B810C003323A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE361F21B2B810C003323A7 /* Images.xcassets */; };
 		CFE361F61B2B810C003323A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE361F41B2B810C003323A7 /* LaunchScreen.xib */; };
 		CFE362021B2B810C003323A7 /* AnxietyTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362011B2B810C003323A7 /* AnxietyTrackerTests.m */; };
+		CFE3620D1B2B837B003323A7 /* GeneralInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3620C1B2B837B003323A7 /* GeneralInfoViewController.m */; };
+		CFE362101B2B83B1003323A7 /* TrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3620F1B2B83B1003323A7 /* TrackViewController.m */; };
+		CFE362131B2B83C6003323A7 /* TherapyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362121B2B83C6003323A7 /* TherapyViewController.m */; };
+		CFE362161B2B83D6003323A7 /* GetHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362151B2B83D6003323A7 /* GetHelpViewController.m */; };
+		CFE362191B2B83E6003323A7 /* ForumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362181B2B83E6003323A7 /* ForumsViewController.m */; };
+		CFE3621C1B2B8412003323A7 /* OptionsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3621B1B2B8412003323A7 /* OptionsTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +37,24 @@
 		CFE361E41B2B810C003323A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CFE361E61B2B810C003323A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CFE361E71B2B810C003323A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CFE361E91B2B810C003323A7 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		CFE361EA1B2B810C003323A7 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		CFE361EC1B2B810C003323A7 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		CFE361ED1B2B810C003323A7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		CFE361F01B2B810C003323A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFE361F21B2B810C003323A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CFE361F51B2B810C003323A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CFE361FB1B2B810C003323A7 /* AnxietyTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnxietyTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE362001B2B810C003323A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFE362011B2B810C003323A7 /* AnxietyTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnxietyTrackerTests.m; sourceTree = "<group>"; };
+		CFE3620B1B2B837B003323A7 /* GeneralInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralInfoViewController.h; sourceTree = "<group>"; };
+		CFE3620C1B2B837B003323A7 /* GeneralInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralInfoViewController.m; sourceTree = "<group>"; };
+		CFE3620E1B2B83B1003323A7 /* TrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackViewController.h; sourceTree = "<group>"; };
+		CFE3620F1B2B83B1003323A7 /* TrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackViewController.m; sourceTree = "<group>"; };
+		CFE362111B2B83C6003323A7 /* TherapyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TherapyViewController.h; sourceTree = "<group>"; };
+		CFE362121B2B83C6003323A7 /* TherapyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TherapyViewController.m; sourceTree = "<group>"; };
+		CFE362141B2B83D6003323A7 /* GetHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetHelpViewController.h; sourceTree = "<group>"; };
+		CFE362151B2B83D6003323A7 /* GetHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetHelpViewController.m; sourceTree = "<group>"; };
+		CFE362171B2B83E6003323A7 /* ForumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumsViewController.h; sourceTree = "<group>"; };
+		CFE362181B2B83E6003323A7 /* ForumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumsViewController.m; sourceTree = "<group>"; };
+		CFE3621A1B2B8412003323A7 /* OptionsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsTableView.h; sourceTree = "<group>"; };
+		CFE3621B1B2B8412003323A7 /* OptionsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +98,18 @@
 			children = (
 				CFE361E61B2B810C003323A7 /* AppDelegate.h */,
 				CFE361E71B2B810C003323A7 /* AppDelegate.m */,
-				CFE361E91B2B810C003323A7 /* FirstViewController.h */,
-				CFE361EA1B2B810C003323A7 /* FirstViewController.m */,
-				CFE361EC1B2B810C003323A7 /* SecondViewController.h */,
-				CFE361ED1B2B810C003323A7 /* SecondViewController.m */,
+				CFE3620B1B2B837B003323A7 /* GeneralInfoViewController.h */,
+				CFE3620C1B2B837B003323A7 /* GeneralInfoViewController.m */,
+				CFE3620E1B2B83B1003323A7 /* TrackViewController.h */,
+				CFE3620F1B2B83B1003323A7 /* TrackViewController.m */,
+				CFE362111B2B83C6003323A7 /* TherapyViewController.h */,
+				CFE362121B2B83C6003323A7 /* TherapyViewController.m */,
+				CFE362141B2B83D6003323A7 /* GetHelpViewController.h */,
+				CFE362151B2B83D6003323A7 /* GetHelpViewController.m */,
+				CFE362171B2B83E6003323A7 /* ForumsViewController.h */,
+				CFE362181B2B83E6003323A7 /* ForumsViewController.m */,
+				CFE3621A1B2B8412003323A7 /* OptionsTableView.h */,
+				CFE3621B1B2B8412003323A7 /* OptionsTableView.m */,
 				CFE361F21B2B810C003323A7 /* Images.xcassets */,
 				CFE361F41B2B810C003323A7 /* LaunchScreen.xib */,
 				CFE361EF1B2B810C003323A7 /* Main.storyboard */,
@@ -224,9 +244,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE361EE1B2B810C003323A7 /* SecondViewController.m in Sources */,
+				CFE362131B2B83C6003323A7 /* TherapyViewController.m in Sources */,
+				CFE362101B2B83B1003323A7 /* TrackViewController.m in Sources */,
 				CFE361E81B2B810C003323A7 /* AppDelegate.m in Sources */,
-				CFE361EB1B2B810C003323A7 /* FirstViewController.m in Sources */,
+				CFE3620D1B2B837B003323A7 /* GeneralInfoViewController.m in Sources */,
+				CFE3621C1B2B8412003323A7 /* OptionsTableView.m in Sources */,
+				CFE362191B2B83E6003323A7 /* ForumsViewController.m in Sources */,
+				CFE362161B2B83D6003323A7 /* GetHelpViewController.m in Sources */,
 				CFE361E51B2B810C003323A7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
