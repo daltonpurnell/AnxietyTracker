@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TherapyViewController : UIViewController
+@interface TherapyViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

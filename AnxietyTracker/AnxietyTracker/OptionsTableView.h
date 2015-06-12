@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OptionsTableView : UITableViewController
+@interface OptionsTableView : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end
