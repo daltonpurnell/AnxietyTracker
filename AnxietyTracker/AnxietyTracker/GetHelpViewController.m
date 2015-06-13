@@ -40,7 +40,8 @@
     [self.mapView setRegion:region animated:YES];
     [Appearance initializeAppearanceDefaults];
 
-    
+    self.mapView.clipsToBounds = YES;
+    self.mapView.layer.cornerRadius = 5/2.0f;
 }
 - (IBAction)searchButtonTapped:(id)sender {
     

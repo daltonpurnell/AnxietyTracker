@@ -145,17 +145,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VqC-o9-CnJ">
-                                <rect key="frame" x="0.0" y="204" width="600" height="260"/>
+                                <rect key="frame" x="0.0" y="157" width="600" height="280"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="600" id="NJm-dO-lkM"/>
-                                    <constraint firstAttribute="height" constant="260" id="rzy-JV-nUc"/>
+                                    <constraint firstAttribute="height" constant="280" id="rzy-JV-nUc"/>
                                 </constraints>
                             </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ie5-FG-EPc">
-                                <rect key="frame" x="223" y="114" width="155" height="29"/>
+                                <rect key="frame" x="165" y="114" width="220" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="nlu-Wp-nTM"/>
-                                    <constraint firstAttribute="height" constant="28" id="nzw-vO-J9u"/>
+                                    <constraint firstAttribute="width" constant="220" id="dmr-yX-ezE"/>
+                                    <constraint firstAttribute="height" constant="28" id="w0T-qM-CSr"/>
                                 </constraints>
                                 <segments>
                                     <segment title="Therapists"/>
@@ -173,7 +173,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHx-lc-gHj">
-                                <rect key="frame" x="275" y="146" width="50" height="50"/>
+                                <rect key="frame" x="404" y="114" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="7Co-pU-dmN"/>
+                                    <constraint firstAttribute="width" constant="32" id="UKJ-Oj-kFJ"/>
+                                </constraints>
                                 <state key="normal" image="Search-50">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -185,15 +189,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VqC-o9-CnJ" firstAttribute="leading" secondItem="2ZD-70-Xln" secondAttribute="leadingMargin" constant="-16" id="0fc-Xk-JiJ"/>
-                            <constraint firstAttribute="centerX" secondItem="Ie5-FG-EPc" secondAttribute="centerX" constant="-0.5" id="96p-1g-IyG"/>
-                            <constraint firstItem="IHx-lc-gHj" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="82" id="BZn-sJ-Ekd"/>
+                            <constraint firstItem="eLJ-KT-shR" firstAttribute="trailing" secondItem="IHx-lc-gHj" secondAttribute="trailing" id="KeS-f5-y0g"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VqC-o9-CnJ" secondAttribute="trailing" constant="-16" id="ORY-qq-7cn"/>
-                            <constraint firstItem="VqC-o9-CnJ" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="140" id="TR8-d0-cTa"/>
+                            <constraint firstItem="VqC-o9-CnJ" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="93" id="TR8-d0-cTa"/>
+                            <constraint firstItem="Ie5-FG-EPc" firstAttribute="top" secondItem="eLJ-KT-shR" secondAttribute="bottom" constant="8" id="TqE-6f-8FY"/>
+                            <constraint firstItem="IHx-lc-gHj" firstAttribute="top" secondItem="eLJ-KT-shR" secondAttribute="bottom" constant="8" id="U0L-t6-n8z"/>
                             <constraint firstItem="eLJ-KT-shR" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="21" id="VJk-mY-R7i"/>
                             <constraint firstAttribute="centerX" secondItem="eLJ-KT-shR" secondAttribute="centerX" constant="-0.5" id="Xr8-oa-unc"/>
-                            <constraint firstAttribute="centerX" secondItem="IHx-lc-gHj" secondAttribute="centerX" id="ZL1-jI-jr4"/>
-                            <constraint firstItem="Ie5-FG-EPc" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="50" id="l6M-bL-aal"/>
                             <constraint firstAttribute="centerX" secondItem="VqC-o9-CnJ" secondAttribute="centerX" id="oby-Vc-QR6"/>
+                            <constraint firstItem="Ie5-FG-EPc" firstAttribute="leading" secondItem="eLJ-KT-shR" secondAttribute="leading" id="w24-f9-HT5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="m2R-37-fU6"/>
