@@ -11,5 +11,7 @@
 
 @interface TherapyViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic)NSArray *optionsList;
+@property (strong, nonatomic)NSArray *subtitleList;
 
 @end
