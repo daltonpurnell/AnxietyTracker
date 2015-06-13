@@ -56,7 +56,7 @@ if (self.segmentedControl.selectedSegmentIndex==0) {
     
     // This is to perform a new search
     MKLocalSearchRequest *request = [MKLocalSearchRequest new];
-    request.naturalLanguageQuery = @"Psychiatrist";
+    request.naturalLanguageQuery = @"Mental Health Therapists";
     request.region = self.mapView.region;
     
     if (!matchingItems) {
@@ -90,7 +90,7 @@ if (self.segmentedControl.selectedSegmentIndex==0) {
             }
 
         }];
-} else {
+} else if (self.segmentedControl.selectedSegmentIndex==1) {
     
     self.annotationView = [[MKAnnotationView alloc] init];
     
@@ -99,7 +99,7 @@ if (self.segmentedControl.selectedSegmentIndex==0) {
     
     // This is to perform a new search
     MKLocalSearchRequest *request = [MKLocalSearchRequest new];
-    request.naturalLanguageQuery = @"Mental Therapy";
+    request.naturalLanguageQuery = @"Psychiatrist";
     request.region = self.mapView.region;
     
     if (!matchingItems) {
