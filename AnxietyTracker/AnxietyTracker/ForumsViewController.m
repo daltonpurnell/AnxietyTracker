@@ -21,6 +21,9 @@
     self.tableView.delegate = self;
     
     [Appearance initializeAppearanceDefaults];
+    
+    self.optionsList= [[NSArray alloc] initWithObjects: @"Anxiety Zone", @"Psych Forums", @"Social Anxiety Support",
+                       @"Social Phobia World", nil];
 
 }
 
@@ -32,12 +35,23 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 1;
+    return self.optionsList.count;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
+    if (indexPath.row == 0) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.anxietyzone.com/"]];
+    }
+    if (indexPath.row == 1) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.psychforums.com/generalized-anxiety/"]];
+    }
+    if (indexPath.row == 2) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.socialanxietysupport.com/forum/"]];
+    }
+    if (indexPath.row == 2) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.socialphobiaworld.com/social-anxiety-forum/"]];
+    }
 }
 
 
@@ -45,10 +59,10 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"identifier" forIndexPath:indexPath];
     
     // Configure the cell...
+    cell.textLabel.text=[self.optionsList objectAtIndex:indexPath.row];
     
     return cell;
 }
-
 
 
 /*
