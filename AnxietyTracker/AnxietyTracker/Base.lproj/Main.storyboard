@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--General Info View Controller-->
+        <!--General Info-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="GeneralInfoViewController" sceneMemberID="viewController">
@@ -18,35 +18,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="U6b-Vc-bgL"/>
+                    <navigationItem key="navigationItem" title="General Info" id="U6b-Vc-bgL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1562" y="-320"/>
         </scene>
-        <!--Track View Controller-->
+        <!--Track Progress-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <viewController id="8rJ-Kc-sve" customClass="TrackViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xSo-zU-0pQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="0UD-fg-N7j"/>
+                        <viewControllerLayoutGuide type="top" id="uo1-FK-gUf"/>
+                        <viewControllerLayoutGuide type="bottom" id="oBJ-Wc-jV8"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="UDw-Vs-Ce4" customClass="JYGraphView">
+                    <view key="view" contentMode="scaleToFill" id="44T-XE-lz9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="18f-Nk-R3v"/>
-                    <connections>
-                        <outlet property="graphView" destination="UDw-Vs-Ce4" id="cVz-wP-55d"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Track Progress" id="18f-Nk-R3v"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1558" y="349"/>
         </scene>
-        <!--Therapy View Controller-->
+        <!--Therapy-->
         <scene sceneID="Hce-ci-Wiw">
             <objects>
                 <viewController id="5v9-nC-tFv" customClass="TherapyViewController" sceneMemberID="viewController">
@@ -73,7 +70,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="iKD-Yj-e3W"/>
+                    <navigationItem key="navigationItem" title="Therapy" id="iKD-Yj-e3W"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="Eje-aL-y8m" id="2Bi-62-gzL"/>
@@ -83,7 +80,7 @@
             </objects>
             <point key="canvasLocation" x="1562" y="1034"/>
         </scene>
-        <!--Get Help View Controller-->
+        <!--Get Help-->
         <scene sceneID="gT0-ef-8WT">
             <objects>
                 <viewController id="YUY-Bn-RpU" customClass="GetHelpViewController" sceneMemberID="viewController">
@@ -151,7 +148,7 @@
                             <constraint firstItem="VqC-o9-CnJ" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="90" id="xJ3-7u-6vB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="m2R-37-fU6"/>
+                    <navigationItem key="navigationItem" title="Get Help" id="m2R-37-fU6"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="VqC-o9-CnJ" id="DNG-GA-6tI"/>
@@ -171,7 +168,7 @@
             </objects>
             <point key="canvasLocation" x="1552" y="1710"/>
         </scene>
-        <!--Forums View Controller-->
+        <!--Forums-->
         <scene sceneID="bIy-bQ-UkB">
             <objects>
                 <viewController id="DG6-5y-jLe" customClass="ForumsViewController" sceneMemberID="viewController">
@@ -198,7 +195,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dYe-31-Tb3"/>
+                    <navigationItem key="navigationItem" title="Forums" id="dYe-31-Tb3"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="Ar7-iB-N4n" id="kJ4-ZC-ouB"/>
