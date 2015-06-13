@@ -7,7 +7,6 @@
 //
 
 #import "ForumsViewController.h"
-#import "CustomForumCell.h"
 
 @interface ForumsViewController ()
 
@@ -56,12 +55,10 @@
 }
 
 
-- (CustomForumCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CustomForumCell *cell = [tableView dequeueReusableCellWithIdentifier:@"identifier" forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"identifier" forIndexPath:indexPath];
     
-    // Configure the cell...
-    cell.textLabel.text=[self.optionsList objectAtIndex:indexPath.row];
-    
+    cell.textLabel.text=[self.optionsList objectAtIndex:indexPath.row];    
     return cell;
 }
 

@@ -184,14 +184,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="identifier" id="epI-hW-XgH">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="identifier" rowHeight="200" id="epI-hW-XgH">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="epI-hW-XgH" id="zOL-kl-N4Y">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="cdh-N4-QGh" kind="showDetail" identifier="showWebView" id="NNB-TB-25v"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -324,21 +321,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6C3-4e-7FT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="746" y="2380"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="W45-Hf-Vjy">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cdh-N4-QGh" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zsI-F8-asA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rMK-AM-GI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2195" y="2380"/>
         </scene>
     </scenes>
     <resources>
