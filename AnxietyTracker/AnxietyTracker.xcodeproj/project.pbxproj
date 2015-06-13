@@ -37,6 +37,7 @@
 		CFE3629E1B2C9622003323A7 /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3629D1B2C9622003323A7 /* EntryController.m */; };
 		CFE362A11B2C9674003323A7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFE3629F1B2C9674003323A7 /* Model.xcdatamodeld */; };
 		CFE362A41B2C9721003323A7 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362A31B2C9721003323A7 /* Entry.m */; };
+		CFE362A71B2CA1D1003323A7 /* EntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362A61B2CA1D1003323A7 /* EntryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,8 @@
 		CFE362A01B2C9674003323A7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		CFE362A21B2C9721003323A7 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
 		CFE362A31B2C9721003323A7 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		CFE362A51B2CA1D1003323A7 /* EntryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryDetailViewController.h; sourceTree = "<group>"; };
+		CFE362A61B2CA1D1003323A7 /* EntryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 				CFE3620F1B2B83B1003323A7 /* TrackViewController.m */,
 				CFE362461B2B9339003323A7 /* CustomEntryCell.h */,
 				CFE362471B2B9339003323A7 /* CustomEntryCell.m */,
+				CFE362A51B2CA1D1003323A7 /* EntryDetailViewController.h */,
+				CFE362A61B2CA1D1003323A7 /* EntryDetailViewController.m */,
 				CFE362111B2B83C6003323A7 /* TherapyViewController.h */,
 				CFE362121B2B83C6003323A7 /* TherapyViewController.m */,
 				CFE362141B2B83D6003323A7 /* GetHelpViewController.h */,
@@ -345,6 +350,7 @@
 				CFE362131B2B83C6003323A7 /* TherapyViewController.m in Sources */,
 				CFE362101B2B83B1003323A7 /* TrackViewController.m in Sources */,
 				CFE362691B2B967F003323A7 /* AFURLSessionManager.m in Sources */,
+				CFE362A71B2CA1D1003323A7 /* EntryDetailViewController.m in Sources */,
 				CFE362481B2B9339003323A7 /* CustomEntryCell.m in Sources */,
 				CFE362661B2B967F003323A7 /* AFURLConnectionOperation.m in Sources */,
 				CFE362621B2B967F003323A7 /* AFHTTPRequestOperationManager.m in Sources */,

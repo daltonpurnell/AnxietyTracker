@@ -33,6 +33,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     return [EntryController sharedInstance].entries.count;
+//    return 1;
 }
 
 
