@@ -13,15 +13,15 @@
 
 + (void)initializeAppearanceDefaults {
     
-    [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithRed:21/255.0 green:126/255.0 blue:244/255.0 alpha:1]];
+    [[UINavigationBar appearance] setBackgroundColor:[UIColor colorWithRed:141/255.0 green:148/255.0 blue:211/255.0 alpha:1]];
     
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:21/255.0 green:126/255.0 blue:244/255.0 alpha:1]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:141/255.0 green:148/255.0 blue:211/255.0 alpha:1]];
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
-    [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:21/255.0 green:126/255.0 blue:244/255.0 alpha:1]];
+    [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:36/255.0 green:47/255.0 blue:60/255.0 alpha:1]];
     
-    [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setTintColor:[UIColor colorWithRed:141/255.0 green:148/255.0 blue:211/255.0 alpha:1]];
     
     [[UINavigationBar appearance] setTranslucent:NO];
     
@@ -29,8 +29,9 @@
                                                            [UIColor whiteColor],
                                                            NSForegroundColorAttributeName,
                                                            nil]];
+    [[UILabel appearance]setTextColor:[UIColor grayColor]];
     
-    [[UISegmentedControl appearance] setTintColor:[UIColor colorWithRed:21/255.0 green:126/255.0 blue:244/255.0 alpha:1]];
+    [[UISegmentedControl appearance] setTintColor:[UIColor colorWithRed:141/255.0 green:148/255.0 blue:211/255.0 alpha:1]];
     
 
 }
