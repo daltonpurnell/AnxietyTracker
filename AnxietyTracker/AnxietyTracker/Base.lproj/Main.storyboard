@@ -145,7 +145,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VqC-o9-CnJ">
-                                <rect key="frame" x="0.0" y="184" width="600" height="260"/>
+                                <rect key="frame" x="0.0" y="204" width="600" height="260"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="600" id="NJm-dO-lkM"/>
                                     <constraint firstAttribute="height" constant="260" id="rzy-JV-nUc"/>
@@ -172,9 +172,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHx-lc-gHj">
-                                <rect key="frame" x="276" y="146" width="48" height="30"/>
-                                <state key="normal" title="Search">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHx-lc-gHj">
+                                <rect key="frame" x="275" y="146" width="50" height="50"/>
+                                <state key="normal" image="Search-50">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -188,7 +188,7 @@
                             <constraint firstAttribute="centerX" secondItem="Ie5-FG-EPc" secondAttribute="centerX" constant="-0.5" id="96p-1g-IyG"/>
                             <constraint firstItem="IHx-lc-gHj" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="82" id="BZn-sJ-Ekd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VqC-o9-CnJ" secondAttribute="trailing" constant="-16" id="ORY-qq-7cn"/>
-                            <constraint firstItem="VqC-o9-CnJ" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="120" id="TR8-d0-cTa"/>
+                            <constraint firstItem="VqC-o9-CnJ" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="140" id="TR8-d0-cTa"/>
                             <constraint firstItem="eLJ-KT-shR" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="21" id="VJk-mY-R7i"/>
                             <constraint firstAttribute="centerX" secondItem="eLJ-KT-shR" secondAttribute="centerX" constant="-0.5" id="Xr8-oa-unc"/>
                             <constraint firstAttribute="centerX" secondItem="IHx-lc-gHj" secondAttribute="centerX" id="ZL1-jI-jr4"/>
@@ -317,7 +317,7 @@
         <scene sceneID="jkK-DN-IM3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2v3-2V-xeZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Therapy" image="Therapy-32" id="KhI-5Z-h8J"/>
+                    <tabBarItem key="tabBarItem" title="Therapy" image="Meeting-32" id="KhI-5Z-h8J"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hKQ-NC-x4S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -374,8 +374,9 @@
     <resources>
         <image name="Home-32" width="32" height="32"/>
         <image name="Line Chart-32" width="32" height="32"/>
+        <image name="Meeting-32" width="32" height="32"/>
+        <image name="Search-50" width="50" height="50"/>
         <image name="Stethoscope-32" width="32" height="32"/>
         <image name="Talk-32" width="32" height="32"/>
-        <image name="Therapy-32" width="32" height="32"/>
     </resources>
 </document>
