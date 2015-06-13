@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "WikipediaHelper.h"
+#import "Appearance.h"
 
 @interface GeneralInfoViewController : UIViewController <WikipediaHelperDelegate>
 //{

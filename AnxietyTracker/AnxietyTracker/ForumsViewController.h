@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Appearance.h"
 
 @interface ForumsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

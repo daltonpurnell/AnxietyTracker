@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CustomEntryCell.h"
+#import "Appearance.h"
 
 @interface TrackViewController : UIViewController
 

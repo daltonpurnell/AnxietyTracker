@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "GetHelpViewController.h"
+#import "Appearance.h"
+
 
 @interface AppDelegate ()
 
@@ -20,6 +22,8 @@
     // Override point for customization after application launch.
     CLLocationManager *locationManager = [[CLLocationManager alloc]init];
  [locationManager requestAlwaysAuthorization];
+    [Appearance initializeAppearanceDefaults];
+    
     return YES;
 }
 

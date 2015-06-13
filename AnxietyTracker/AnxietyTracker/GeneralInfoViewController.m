@@ -33,7 +33,8 @@
     
     self.imageView.hidden = YES;
     
-    
+    [Appearance initializeAppearanceDefaults];
+
 }
 
 

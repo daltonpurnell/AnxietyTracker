@@ -10,4 +10,6 @@
 
 @interface Appearance : NSObject
 
++ (void)initializeAppearanceDefaults;
+
 @end

@@ -20,6 +20,9 @@
     
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    
+    [Appearance initializeAppearanceDefaults];
+
 }
 
 - (void)didReceiveMemoryWarning {

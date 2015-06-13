@@ -10,6 +10,7 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "Pin.h"
+#import "Appearance.h"
 
 //#define kGOOGLE_API_KEY @"AIzaSyBDqG6KUFNfeCcwIPAh9GYLAzycDIF8TXg"
 

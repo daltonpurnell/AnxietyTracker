@@ -38,6 +38,8 @@
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.location.coordinate, 20000, 20000);
     
     [self.mapView setRegion:region animated:YES];
+    [Appearance initializeAppearanceDefaults];
+
     
 }
 - (IBAction)searchButtonTapped:(id)sender {

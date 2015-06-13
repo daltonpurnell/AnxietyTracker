@@ -11,4 +11,5 @@ dependencies: \
   /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/AFNetworking/AFHTTPRequestOperation.h \
   /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/AFNetworking/AFHTTPRequestOperationManager.h \
   /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/AFNetworking/AFURLSessionManager.h \
-  /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/AFNetworking/AFHTTPSessionManager.h
+  /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/AFNetworking/AFHTTPSessionManager.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/Appearance.h
