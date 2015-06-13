@@ -9,12 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "CustomEntryCell.h"
 #import "Appearance.h"
+#import "EntryController.h"
 
 @interface TrackViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
-
-
-- (IBAction)addPointToGraph:(id)sender;
 
 @end

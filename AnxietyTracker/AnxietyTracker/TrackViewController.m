@@ -8,6 +8,7 @@
 
 #import "TrackViewController.h"
 
+
 @interface TrackViewController ()
 
 @end
@@ -18,8 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
+//    self.tableView.delegate = self;
+//    self.tableView.dataSource = self;
     
     [Appearance initializeAppearanceDefaults];
     
@@ -31,12 +32,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 1;
-}
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    
+    return [EntryController sharedInstance].entries.count;
 }
 
 
@@ -48,7 +44,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return 100.0;
+    return 150.0;
 }
 /*
 #pragma mark - Navigation

@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
-@interface CustomEntryCell : NSObject
+@interface CustomEntryCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *ratingLabel;
+@property (weak, nonatomic) IBOutlet UILabel *noteLabell;
+@property (weak, nonatomic) IBOutlet UILabel *timestampLabel;
 
 @end
