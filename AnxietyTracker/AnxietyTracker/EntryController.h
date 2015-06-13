@@ -15,7 +15,7 @@
 
 + (EntryController *)sharedInstance;
 
-- (Entry *)createEntryWithRating:(NSNumber *)rating Note:(NSString *)note Timestamp:(NSDate *)timestamp;
+- (Entry *)createEntryWithRating:(NSString *)rating Note:(NSString *)note Timestamp:(NSDate *)timestamp;
 
 - (void)save;
 

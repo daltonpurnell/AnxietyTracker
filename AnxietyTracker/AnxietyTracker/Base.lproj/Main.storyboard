@@ -116,7 +116,7 @@
                     <navigationItem key="navigationItem" title="Track Progress" id="18f-Nk-R3v">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="SHl-NE-tBO">
                             <connections>
-                                <segue destination="yAs-ea-KKV" kind="presentation" id="9Vq-yT-dVC"/>
+                                <segue destination="yAs-ea-KKV" kind="presentation" identifier="showDetail" id="9Vq-yT-dVC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -165,6 +165,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ow-m6-xhE">
+                                <rect key="frame" x="279" y="141" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xt5-56-uwg">
                                 <rect key="frame" x="16" y="141" width="568" height="162"/>
                                 <constraints>
@@ -189,7 +195,23 @@
                             <constraint firstItem="sIv-xX-q4f" firstAttribute="centerX" secondItem="4x6-Br-Zxv" secondAttribute="centerX" constant="0.5" id="vfM-jv-COT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="m9t-6E-kpQ"/>
+                    <navigationItem key="navigationItem" id="m9t-6E-kpQ">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="n1h-rZ-EPi">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="4ny-Aa-Rzx" id="7Fj-bI-scl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="da6-Z4-Oa3">
+                            <connections>
+                                <action selector="doneButtonTapped:" destination="4ny-Aa-Rzx" id="mNS-8N-1nD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="noteTextView" destination="4x6-Br-Zxv" id="YAY-ju-ZII"/>
+                        <outlet property="pickedLabel" destination="8ow-m6-xhE" id="nHv-JL-GIW"/>
+                        <outlet property="picker" destination="Xt5-56-uwg" id="qsi-uM-tU5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQq-IY-iKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

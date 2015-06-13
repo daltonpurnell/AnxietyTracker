@@ -47,6 +47,15 @@
     
     return 150.0;
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"showDetail"]) {
+        EntryDetailViewController *detailViewController = [[[segue destinationViewController] viewControllers] objectAtIndex:0];
+    }
+}
+
+
 /*
 #pragma mark - Navigation
 

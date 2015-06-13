@@ -28,7 +28,7 @@ static NSString * const AllEntriesKey = @"allEntries";
 
 #pragma mark - Create
 
--(Entry *)createEntryWithRating:(NSNumber *)rating Note:(NSString *)note Timestamp:(NSDate *)timestamp {
+-(Entry *)createEntryWithRating:(NSString *)rating Note:(NSString *)note Timestamp:(NSDate *)timestamp {
     Entry *entry = [NSEntityDescription insertNewObjectForEntityForName:@"Entry" inManagedObjectContext:[Stack sharedInstance].managedObjectContext];
     entry.note = note;
     entry.rating = rating;

@@ -10,6 +10,7 @@
 #import "CustomEntryCell.h"
 #import "Appearance.h"
 #import "EntryController.h"
+#import "EntryDetailViewController.h"
 
 @interface TrackViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

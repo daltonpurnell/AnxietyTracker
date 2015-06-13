@@ -36,8 +36,8 @@
 		CFE3629B1B2C9618003323A7 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3629A1B2C9618003323A7 /* Stack.m */; };
 		CFE3629E1B2C9622003323A7 /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3629D1B2C9622003323A7 /* EntryController.m */; };
 		CFE362A11B2C9674003323A7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFE3629F1B2C9674003323A7 /* Model.xcdatamodeld */; };
-		CFE362A41B2C9721003323A7 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362A31B2C9721003323A7 /* Entry.m */; };
 		CFE362A71B2CA1D1003323A7 /* EntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362A61B2CA1D1003323A7 /* EntryDetailViewController.m */; };
+		CFE362AA1B2CB0D6003323A7 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362A91B2CB0D6003323A7 /* Entry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,10 +106,10 @@
 		CFE3629C1B2C9622003323A7 /* EntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
 		CFE3629D1B2C9622003323A7 /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
 		CFE362A01B2C9674003323A7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		CFE362A21B2C9721003323A7 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
-		CFE362A31B2C9721003323A7 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 		CFE362A51B2CA1D1003323A7 /* EntryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryDetailViewController.h; sourceTree = "<group>"; };
 		CFE362A61B2CA1D1003323A7 /* EntryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryDetailViewController.m; sourceTree = "<group>"; };
+		CFE362A81B2CB0D6003323A7 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		CFE362A91B2CB0D6003323A7 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,8 +153,8 @@
 		CFE361E11B2B810C003323A7 /* AnxietyTracker */ = {
 			isa = PBXGroup;
 			children = (
-				CFE362A21B2C9721003323A7 /* Entry.h */,
-				CFE362A31B2C9721003323A7 /* Entry.m */,
+				CFE362A81B2CB0D6003323A7 /* Entry.h */,
+				CFE362A91B2CB0D6003323A7 /* Entry.m */,
 				CFE3629C1B2C9622003323A7 /* EntryController.h */,
 				CFE3629D1B2C9622003323A7 /* EntryController.m */,
 				CFE362201B2B883A003323A7 /* Appearance.h */,
@@ -356,9 +356,9 @@
 				CFE362621B2B967F003323A7 /* AFHTTPRequestOperationManager.m in Sources */,
 				CFE361E81B2B810C003323A7 /* AppDelegate.m in Sources */,
 				CFE362641B2B967F003323A7 /* AFNetworkReachabilityManager.m in Sources */,
+				CFE362AA1B2CB0D6003323A7 /* Entry.m in Sources */,
 				CFE3620D1B2B837B003323A7 /* GeneralInfoViewController.m in Sources */,
 				CFE3626C1B2BCBF0003323A7 /* Pin.m in Sources */,
-				CFE362A41B2C9721003323A7 /* Entry.m in Sources */,
 				CFE362651B2B967F003323A7 /* AFSecurityPolicy.m in Sources */,
 				CFE3629E1B2C9622003323A7 /* EntryController.m in Sources */,
 				CFE3621C1B2B8412003323A7 /* OptionsTableView.m in Sources */,

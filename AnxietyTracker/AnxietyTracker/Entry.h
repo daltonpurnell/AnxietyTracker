@@ -12,7 +12,7 @@
 
 @interface Entry : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * rating;
+@property (nonatomic, retain) NSString * rating;
 @property (nonatomic, retain) NSString * note;
 @property (nonatomic, retain) NSDate * timestamp;
 

@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "EntryController.h"
 @import UIKit;
 
 @interface CustomEntryCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *ratingLabel;
 @property (weak, nonatomic) IBOutlet UILabel *noteLabell;
 @property (weak, nonatomic) IBOutlet UILabel *timestampLabel;
+
+-(void)updateWithEntry:(Entry *)entry;
+
 
 @end
