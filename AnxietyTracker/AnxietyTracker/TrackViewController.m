@@ -27,6 +27,11 @@
     
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    
+    [self.tableView reloadData];
+}
+
 
 #pragma mark - table view data source and delegate methods
 
@@ -40,6 +45,10 @@
 - (CustomEntryCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CustomEntryCell *customCell = [tableView dequeueReusableCellWithIdentifier:@"identifier" forIndexPath:indexPath];
     
+    Entry *entry = [EntryController sharedInstance].entries[indexPath.row];
+    customCell.entry = entry;
+    [customCell updateWithEntry:entry];
+    
     return customCell;
 }
 
@@ -48,12 +57,13 @@
     return 150.0;
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    if ([segue.identifier isEqualToString:@"showDetail"]) {
-        EntryDetailViewController *detailViewController = [[[segue destinationViewController] viewControllers] objectAtIndex:0];
-    }
-}
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    
+//    if ([segue.identifier isEqualToString:@"showDetail"]) {
+//        EntryDetailViewController *detailViewController = [[[segue destinationViewController] viewControllers] objectAtIndex:0];
+//    }
+//}
+
 
 
 /*

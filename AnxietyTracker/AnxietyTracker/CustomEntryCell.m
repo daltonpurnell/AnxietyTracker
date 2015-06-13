@@ -10,6 +10,14 @@
 
 @implementation CustomEntryCell
 
+
+- (void)awakeFromNib {
+    
+    
+    [self updateWithEntry:self.entry];
+    
+}
+
 -(void)updateWithEntry:(Entry *)entry {
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];

@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *noteLabell;
 @property (weak, nonatomic) IBOutlet UILabel *timestampLabel;
 
+@property (strong, nonatomic) Entry *entry;
+
 -(void)updateWithEntry:(Entry *)entry;
 
 

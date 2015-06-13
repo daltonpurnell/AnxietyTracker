@@ -57,7 +57,13 @@ static NSString * const AllEntriesKey = @"allEntries";
 }
 
 - (void)saveToPersistentStorage {
-    [[Stack sharedInstance].managedObjectContext save:nil];
+    
+    NSError *error;
+    [[Stack sharedInstance].managedObjectContext save:&error];
+    
+    if (error) {
+        NSLog(@"%@", error.localizedDescription);
+    }
 }
 
 #pragma mark - Delete

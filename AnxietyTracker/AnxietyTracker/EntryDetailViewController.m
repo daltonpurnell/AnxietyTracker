@@ -34,15 +34,12 @@
 
 - (IBAction)doneButtonTapped:(id)sender {
     
-    if (self.entry) {
         self.entry.rating = self.pickedLabel.text;
         self.entry.note = self.noteTextView.text;
         self.entry.timestamp = [NSDate date];
-        
-        [[EntryController sharedInstance] save];
-    } else {
         self.entry = [[EntryController sharedInstance] createEntryWithRating:self.pickedLabel.text Note:self.noteTextView.text Timestamp:[NSDate date]];
-    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
@@ -65,8 +62,11 @@
     
     [alertController addAction:[UIAlertAction actionWithTitle:@"Save Draft" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
-        // write code to save the draft here
-        [[EntryController sharedInstance]createEntryWithRating:self.pickedLabel.text Note:self.noteTextView.text Timestamp:[NSDate date]];
+        //save the draft here
+        self.entry.rating = self.pickedLabel.text;
+        self.entry.note = self.noteTextView.text;
+        self.entry.timestamp = [NSDate date];
+        [[EntryController sharedInstance]createEntryWithRating:self.pickedLabel.text Note:self.entry.note Timestamp:[NSDate date]];
         
         [self dismissViewControllerAnimated:YES completion:nil];
         
@@ -84,13 +84,14 @@
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
     NSInteger selectedRowIncomponentZero = [pickerView selectedRowInComponent:0];
-    NSString *number = self.numbers[0][selectedRowIncomponentZero];
+    NSString *number = self.numbers[selectedRowIncomponentZero];
     
     NSString *pickedNumber = [NSString stringWithFormat:@"%@", number];
+    NSLog(@"%@", pickedNumber);
     
-//    // set picked label to completeDessert
+//    // set entry.rating to pickedNumber
     self.pickedLabel.text = pickedNumber;
-//
+
 }
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
@@ -116,8 +117,6 @@
     return 50;
     
 }
-
-
 
 
 -(NSArray *)numbers {
