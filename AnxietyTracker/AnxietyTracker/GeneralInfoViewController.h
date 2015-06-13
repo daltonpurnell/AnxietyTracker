@@ -7,17 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WikipediaHelper.h"
 #import "Appearance.h"
 
-@interface GeneralInfoViewController : UIViewController <WikipediaHelperDelegate>
-//{
-//    IBOutlet UIImageView *imageView;
-//    IBOutlet UIWebView *webView;
-//}
+@interface GeneralInfoViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingActivity;
 
 @end

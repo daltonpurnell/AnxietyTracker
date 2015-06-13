@@ -130,6 +130,7 @@ if (self.segmentedControl.selectedSegmentIndex==0) {
                 NSString *address = [item.placemark.addressDictionary objectForKey:@"Street"];
                 NSString *neighborhood = [item.placemark.addressDictionary objectForKey:@"SubLocality"];
                 annotation.subtitle = [NSString stringWithFormat:@"%@ - %@", address, neighborhood];
+                self.mapView.centerCoordinate = item.placemark.coordinate;
                 [self.mapView addAnnotation:annotation];
             }
         

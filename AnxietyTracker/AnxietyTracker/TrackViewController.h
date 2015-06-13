@@ -9,7 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "CustomEntryCell.h"
 #import "Appearance.h"
+#import "JYGraphView.h"
+#import "JYGraphPoint.h"
 
-@interface TrackViewController : UIViewController
+
+@interface TrackViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet JYGraphView *graphView;
+
+
+- (IBAction)addPointToGraph:(id)sender;
 
 @end

@@ -16,47 +16,9 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8s-mL-Qbp">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="600" id="k72-Ti-zFn"/>
-                                    <constraint firstAttribute="height" constant="600" id="vWu-pN-Pny"/>
-                                </constraints>
-                            </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="DsR-qX-C8c">
-                                <rect key="frame" x="284" y="290" width="20" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="2NO-e4-mg5"/>
-                                    <constraint firstAttribute="height" constant="20" id="yGh-Ih-dP5"/>
-                                </constraints>
-                            </activityIndicatorView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SVg-dY-KEI">
-                                <rect key="frame" x="16" y="72" width="88" height="90"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="88" id="4g3-FV-3HE"/>
-                                    <constraint firstAttribute="height" constant="90" id="DPR-if-4Fn"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="DsR-qX-C8c" secondAttribute="centerX" constant="6" id="936-ry-7z0"/>
-                            <constraint firstItem="SVg-dY-KEI" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="BFt-5p-Uko"/>
-                            <constraint firstItem="SVg-dY-KEI" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="Jyr-dK-XLB"/>
-                            <constraint firstAttribute="centerX" secondItem="s8s-mL-Qbp" secondAttribute="centerX" id="Mg3-KW-5Si"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="s8s-mL-Qbp" secondAttribute="trailing" constant="-16" id="snT-re-Cbn"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="s8s-mL-Qbp" secondAttribute="bottom" constant="-49" id="t7F-jO-0bm"/>
-                            <constraint firstItem="s8s-mL-Qbp" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-16" id="ul4-ph-N9V"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="U6b-Vc-bgL"/>
-                    <connections>
-                        <outlet property="imageView" destination="SVg-dY-KEI" id="Ars-18-RAu"/>
-                        <outlet property="loadingActivity" destination="DsR-qX-C8c" id="uIR-bq-IO5"/>
-                        <outlet property="webView" destination="s8s-mL-Qbp" id="lka-Kz-8U0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,33 +29,22 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="TrackViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                        <viewControllerLayoutGuide type="top" id="xSo-zU-0pQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="0UD-fg-N7j"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                    <view key="view" contentMode="scaleToFill" id="UDw-Vs-Ce4" customClass="JYGraphView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DlW-CU-MrM">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="identifier" id="t9V-JC-js0">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t9V-JC-js0" id="YeY-kd-7ld">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="18f-Nk-R3v"/>
+                    <connections>
+                        <outlet property="graphView" destination="UDw-Vs-Ce4" id="cVz-wP-55d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1562" y="360"/>
+            <point key="canvasLocation" x="1558" y="349"/>
         </scene>
         <!--Therapy View Controller-->
         <scene sceneID="Hce-ci-Wiw">
