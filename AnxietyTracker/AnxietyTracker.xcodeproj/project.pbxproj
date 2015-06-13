@@ -19,7 +19,6 @@
 		CFE362161B2B83D6003323A7 /* GetHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362151B2B83D6003323A7 /* GetHelpViewController.m */; };
 		CFE362191B2B83E6003323A7 /* ForumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362181B2B83E6003323A7 /* ForumsViewController.m */; };
 		CFE3621C1B2B8412003323A7 /* OptionsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3621B1B2B8412003323A7 /* OptionsTableView.m */; };
-		CFE3621F1B2B8821003323A7 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3621E1B2B8821003323A7 /* Entry.m */; };
 		CFE362221B2B883A003323A7 /* Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362211B2B883A003323A7 /* Appearance.m */; };
 		CFE362481B2B9339003323A7 /* CustomEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362471B2B9339003323A7 /* CustomEntryCell.m */; };
 		CFE3624A1B2B94FA003323A7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE362491B2B94FA003323A7 /* MapKit.framework */; };
@@ -34,6 +33,10 @@
 		CFE362681B2B967F003323A7 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3625E1B2B967F003323A7 /* AFURLResponseSerialization.m */; };
 		CFE362691B2B967F003323A7 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362601B2B967F003323A7 /* AFURLSessionManager.m */; };
 		CFE3626C1B2BCBF0003323A7 /* Pin.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3626B1B2BCBF0003323A7 /* Pin.m */; };
+		CFE3629B1B2C9618003323A7 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3629A1B2C9618003323A7 /* Stack.m */; };
+		CFE3629E1B2C9622003323A7 /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3629D1B2C9622003323A7 /* EntryController.m */; };
+		CFE362A11B2C9674003323A7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFE3629F1B2C9674003323A7 /* Model.xcdatamodeld */; };
+		CFE362A41B2C9721003323A7 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362A31B2C9721003323A7 /* Entry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +73,6 @@
 		CFE362181B2B83E6003323A7 /* ForumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumsViewController.m; sourceTree = "<group>"; };
 		CFE3621A1B2B8412003323A7 /* OptionsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsTableView.h; sourceTree = "<group>"; };
 		CFE3621B1B2B8412003323A7 /* OptionsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsTableView.m; sourceTree = "<group>"; };
-		CFE3621D1B2B8821003323A7 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
-		CFE3621E1B2B8821003323A7 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 		CFE362201B2B883A003323A7 /* Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appearance.h; sourceTree = "<group>"; };
 		CFE362211B2B883A003323A7 /* Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appearance.m; sourceTree = "<group>"; };
 		CFE362461B2B9339003323A7 /* CustomEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomEntryCell.h; sourceTree = "<group>"; };
@@ -99,6 +100,13 @@
 		CFE362601B2B967F003323A7 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		CFE3626A1B2BCBF0003323A7 /* Pin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pin.h; sourceTree = "<group>"; };
 		CFE3626B1B2BCBF0003323A7 /* Pin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pin.m; sourceTree = "<group>"; };
+		CFE362991B2C9618003323A7 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		CFE3629A1B2C9618003323A7 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		CFE3629C1B2C9622003323A7 /* EntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
+		CFE3629D1B2C9622003323A7 /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
+		CFE362A01B2C9674003323A7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		CFE362A21B2C9721003323A7 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		CFE362A31B2C9721003323A7 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +150,10 @@
 		CFE361E11B2B810C003323A7 /* AnxietyTracker */ = {
 			isa = PBXGroup;
 			children = (
-				CFE3621D1B2B8821003323A7 /* Entry.h */,
-				CFE3621E1B2B8821003323A7 /* Entry.m */,
+				CFE362A21B2C9721003323A7 /* Entry.h */,
+				CFE362A31B2C9721003323A7 /* Entry.m */,
+				CFE3629C1B2C9622003323A7 /* EntryController.h */,
+				CFE3629D1B2C9622003323A7 /* EntryController.m */,
 				CFE362201B2B883A003323A7 /* Appearance.h */,
 				CFE362211B2B883A003323A7 /* Appearance.m */,
 				CFE361E61B2B810C003323A7 /* AppDelegate.h */,
@@ -164,6 +174,9 @@
 				CFE362181B2B83E6003323A7 /* ForumsViewController.m */,
 				CFE3621A1B2B8412003323A7 /* OptionsTableView.h */,
 				CFE3621B1B2B8412003323A7 /* OptionsTableView.m */,
+				CFE3629F1B2C9674003323A7 /* Model.xcdatamodeld */,
+				CFE362991B2C9618003323A7 /* Stack.h */,
+				CFE3629A1B2C9618003323A7 /* Stack.m */,
 				CFE361F21B2B810C003323A7 /* Images.xcassets */,
 				CFE361F41B2B810C003323A7 /* LaunchScreen.xib */,
 				CFE361EF1B2B810C003323A7 /* Main.storyboard */,
@@ -328,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFE362611B2B967F003323A7 /* AFHTTPRequestOperation.m in Sources */,
+				CFE362A11B2C9674003323A7 /* Model.xcdatamodeld in Sources */,
 				CFE362131B2B83C6003323A7 /* TherapyViewController.m in Sources */,
 				CFE362101B2B83B1003323A7 /* TrackViewController.m in Sources */,
 				CFE362691B2B967F003323A7 /* AFURLSessionManager.m in Sources */,
@@ -336,13 +350,15 @@
 				CFE362621B2B967F003323A7 /* AFHTTPRequestOperationManager.m in Sources */,
 				CFE361E81B2B810C003323A7 /* AppDelegate.m in Sources */,
 				CFE362641B2B967F003323A7 /* AFNetworkReachabilityManager.m in Sources */,
-				CFE3621F1B2B8821003323A7 /* Entry.m in Sources */,
 				CFE3620D1B2B837B003323A7 /* GeneralInfoViewController.m in Sources */,
 				CFE3626C1B2BCBF0003323A7 /* Pin.m in Sources */,
+				CFE362A41B2C9721003323A7 /* Entry.m in Sources */,
 				CFE362651B2B967F003323A7 /* AFSecurityPolicy.m in Sources */,
+				CFE3629E1B2C9622003323A7 /* EntryController.m in Sources */,
 				CFE3621C1B2B8412003323A7 /* OptionsTableView.m in Sources */,
 				CFE362671B2B967F003323A7 /* AFURLRequestSerialization.m in Sources */,
 				CFE362681B2B967F003323A7 /* AFURLResponseSerialization.m in Sources */,
+				CFE3629B1B2C9618003323A7 /* Stack.m in Sources */,
 				CFE362191B2B83E6003323A7 /* ForumsViewController.m in Sources */,
 				CFE362161B2B83D6003323A7 /* GetHelpViewController.m in Sources */,
 				CFE362631B2B967F003323A7 /* AFHTTPSessionManager.m in Sources */,
@@ -552,6 +568,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CFE3629F1B2C9674003323A7 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CFE362A01B2C9674003323A7 /* Model.xcdatamodel */,
+			);
+			currentVersion = CFE362A01B2C9674003323A7 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CFE361D71B2B810C003323A7 /* Project object */;
 }

@@ -45,7 +45,7 @@
                                     <constraint firstAttribute="height" constant="262" id="Owe-Uv-Pk7"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="tX7-GT-utO">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="identifier" id="tX7-GT-utO">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tX7-GT-utO" id="UdF-CP-7b5">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -63,6 +63,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Track Progress" id="18f-Nk-R3v"/>
+                    <connections>
+                        <outlet property="tableView" destination="59b-7A-Caf" id="gpu-qf-ias"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1558" y="349"/>

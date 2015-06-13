@@ -1,13 +1,19 @@
 //
 //  Entry.h
-//  AnxietyTracker
+//  
 //
-//  Created by Dalton on 6/12/15.
-//  Copyright (c) 2015 Dalton. All rights reserved.
+//  Created by Dalton on 6/13/15.
+//
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@interface Entry : NSObject
+
+@interface Entry : NSManagedObject
+
+@property (nonatomic, retain) NSNumber * rating;
+@property (nonatomic, retain) NSString * note;
+@property (nonatomic, retain) NSDate * timestamp;
 
 @end
