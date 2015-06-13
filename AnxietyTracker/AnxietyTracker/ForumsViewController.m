@@ -49,7 +49,7 @@
     if (indexPath.row == 2) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.socialanxietysupport.com/forum/"]];
     }
-    if (indexPath.row == 2) {
+    if (indexPath.row == 3) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.socialphobiaworld.com/social-anxiety-forum/"]];
     }
 }
