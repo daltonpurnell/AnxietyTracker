@@ -275,11 +275,11 @@
             </objects>
             <point key="canvasLocation" x="-900" y="852"/>
         </scene>
-        <!--First-->
+        <!--Home-->
         <scene sceneID="gnM-BI-FuN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LCp-mb-zph" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home-32" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="R7g-od-f2a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -294,11 +294,11 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Second-->
+        <!--Track Progress-->
         <scene sceneID="7JW-pg-5CN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zmk-ze-TD3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Track Progress" image="Line Chart-32" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ilx-5V-E30">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -313,11 +313,11 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--Item-->
+        <!--Therapy-->
         <scene sceneID="jkK-DN-IM3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2v3-2V-xeZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="KhI-5Z-h8J"/>
+                    <tabBarItem key="tabBarItem" title="Therapy" image="Therapy-32" id="KhI-5Z-h8J"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hKQ-NC-x4S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -332,11 +332,11 @@
             </objects>
             <point key="canvasLocation" x="750" y="1034"/>
         </scene>
-        <!--Item-->
+        <!--Find Help-->
         <scene sceneID="3ZK-gV-CRo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S6v-ol-8qK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="KG0-ZP-iPr"/>
+                    <tabBarItem key="tabBarItem" title="Find Help" image="Stethoscope-32" id="KG0-ZP-iPr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="P9W-6O-A3f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -351,11 +351,11 @@
             </objects>
             <point key="canvasLocation" x="740" y="1710"/>
         </scene>
-        <!--Item-->
+        <!--Forums-->
         <scene sceneID="RfW-5Y-hig">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3BM-1q-YOA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="R5g-mb-0dA"/>
+                    <tabBarItem key="tabBarItem" title="Forums" image="Talk-32" id="R5g-mb-0dA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0kq-C9-A3L">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -372,7 +372,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="Home-32" width="32" height="32"/>
+        <image name="Line Chart-32" width="32" height="32"/>
+        <image name="Stethoscope-32" width="32" height="32"/>
+        <image name="Talk-32" width="32" height="32"/>
+        <image name="Therapy-32" width="32" height="32"/>
     </resources>
 </document>
