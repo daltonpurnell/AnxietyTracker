@@ -67,6 +67,8 @@ static NSString * const AllEntriesKey = @"allEntries";
 }
 
 #pragma mark - Delete
-
+- (void)removeEntry:(Entry *)entry {
+    [entry.managedObjectContext deleteObject:entry];
+}
 
 @end

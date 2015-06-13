@@ -57,23 +57,21 @@
     return 150.0;
 }
 
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    
-//    if ([segue.identifier isEqualToString:@"showDetail"]) {
-//        EntryDetailViewController *detailViewController = [[[segue destinationViewController] viewControllers] objectAtIndex:0];
-//    }
-//}
 
+#pragma mark - delete cell
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        Entry *entry = [EntryController sharedInstance].entries[indexPath.row];
+        
+        [[EntryController sharedInstance]removeEntry:entry];
+        
+        [tableView reloadData];
+        
+    }
 }
-*/
+
 
 @end

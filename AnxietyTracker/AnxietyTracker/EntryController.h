@@ -19,4 +19,6 @@
 
 - (void)save;
 
+- (void)removeEntry:(Entry *)entry;
+
 @end
