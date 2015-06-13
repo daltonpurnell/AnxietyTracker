@@ -144,13 +144,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VqC-o9-CnJ">
-                                <rect key="frame" x="0.0" y="157" width="600" height="280"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="600" id="NJm-dO-lkM"/>
-                                    <constraint firstAttribute="height" constant="280" id="rzy-JV-nUc"/>
-                                </constraints>
-                            </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ie5-FG-EPc">
                                 <rect key="frame" x="165" y="114" width="220" height="29"/>
                                 <constraints>
@@ -185,19 +178,26 @@
                                     <action selector="searchButtonTapped:" destination="YUY-Bn-RpU" eventType="touchUpInside" id="NfC-Jq-DNp"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VqC-o9-CnJ">
+                                <rect key="frame" x="25" y="154" width="550" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="P6W-2N-LDU"/>
+                                    <constraint firstAttribute="width" constant="550" id="f6a-eF-7iM"/>
+                                </constraints>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VqC-o9-CnJ" firstAttribute="leading" secondItem="2ZD-70-Xln" secondAttribute="leadingMargin" constant="-16" id="0fc-Xk-JiJ"/>
+                            <constraint firstAttribute="centerX" secondItem="VqC-o9-CnJ" secondAttribute="centerX" id="4CX-AR-crm"/>
+                            <constraint firstItem="VqC-o9-CnJ" firstAttribute="leading" secondItem="2ZD-70-Xln" secondAttribute="leadingMargin" constant="9" id="5dG-sf-RUt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VqC-o9-CnJ" secondAttribute="trailing" constant="9" id="8vt-T9-AZj"/>
                             <constraint firstItem="eLJ-KT-shR" firstAttribute="trailing" secondItem="IHx-lc-gHj" secondAttribute="trailing" id="KeS-f5-y0g"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="VqC-o9-CnJ" secondAttribute="trailing" constant="-16" id="ORY-qq-7cn"/>
-                            <constraint firstItem="VqC-o9-CnJ" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="93" id="TR8-d0-cTa"/>
                             <constraint firstItem="Ie5-FG-EPc" firstAttribute="top" secondItem="eLJ-KT-shR" secondAttribute="bottom" constant="8" id="TqE-6f-8FY"/>
                             <constraint firstItem="IHx-lc-gHj" firstAttribute="top" secondItem="eLJ-KT-shR" secondAttribute="bottom" constant="8" id="U0L-t6-n8z"/>
                             <constraint firstItem="eLJ-KT-shR" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="21" id="VJk-mY-R7i"/>
                             <constraint firstAttribute="centerX" secondItem="eLJ-KT-shR" secondAttribute="centerX" constant="-0.5" id="Xr8-oa-unc"/>
-                            <constraint firstAttribute="centerX" secondItem="VqC-o9-CnJ" secondAttribute="centerX" id="oby-Vc-QR6"/>
                             <constraint firstItem="Ie5-FG-EPc" firstAttribute="leading" secondItem="eLJ-KT-shR" secondAttribute="leading" id="w24-f9-HT5"/>
+                            <constraint firstItem="VqC-o9-CnJ" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="90" id="xJ3-7u-6vB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="m2R-37-fU6"/>
