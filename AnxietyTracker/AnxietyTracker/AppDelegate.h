@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GetHelpViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

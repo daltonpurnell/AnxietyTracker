@@ -144,8 +144,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VqC-o9-CnJ">
+                                <rect key="frame" x="0.0" y="184" width="600" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="NJm-dO-lkM"/>
+                                    <constraint firstAttribute="height" constant="260" id="rzy-JV-nUc"/>
+                                </constraints>
+                            </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ie5-FG-EPc">
-                                <rect key="frame" x="223" y="74" width="155" height="29"/>
+                                <rect key="frame" x="223" y="114" width="155" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="155" id="nlu-Wp-nTM"/>
                                     <constraint firstAttribute="height" constant="28" id="nzw-vO-J9u"/>
@@ -155,34 +162,35 @@
                                     <segment title="Doctors"/>
                                 </segments>
                             </segmentedControl>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Dfj-eL-XMe">
-                                <rect key="frame" x="0.0" y="112" width="600" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a therapist or doctor near you!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLJ-KT-shR">
+                                <rect key="frame" x="165" y="85" width="271" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="6zN-Rk-fnY"/>
-                                    <constraint firstAttribute="width" constant="600" id="Td7-Sb-Idf"/>
+                                    <constraint firstAttribute="width" constant="271" id="Lpj-ks-Dp1"/>
+                                    <constraint firstAttribute="height" constant="21" id="dvR-dH-JN0"/>
                                 </constraints>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHx-lc-gHj">
+                                <rect key="frame" x="277" y="146" width="48" height="30"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <outlet property="delegate" destination="YUY-Bn-RpU" id="d9T-X1-JtX"/>
+                                    <action selector="searchButtonTapped:" destination="YUY-Bn-RpU" eventType="touchUpInside" id="NfC-Jq-DNp"/>
                                 </connections>
-                            </searchBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VqC-o9-CnJ">
-                                <rect key="frame" x="0.0" y="156" width="600" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="600" id="NJm-dO-lkM"/>
-                                    <constraint firstAttribute="height" constant="200" id="rzy-JV-nUc"/>
-                                </constraints>
-                            </mapView>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VqC-o9-CnJ" firstAttribute="leading" secondItem="2ZD-70-Xln" secondAttribute="leadingMargin" constant="-16" id="0fc-Xk-JiJ"/>
                             <constraint firstAttribute="centerX" secondItem="Ie5-FG-EPc" secondAttribute="centerX" constant="-0.5" id="96p-1g-IyG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VqC-o9-CnJ" secondAttribute="trailing" constant="-16" id="ORY-qq-7cn"/>
-                            <constraint firstItem="VqC-o9-CnJ" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="92" id="TR8-d0-cTa"/>
-                            <constraint firstItem="VqC-o9-CnJ" firstAttribute="top" secondItem="Dfj-eL-XMe" secondAttribute="bottom" id="TXc-5K-JFm"/>
-                            <constraint firstItem="VqC-o9-CnJ" firstAttribute="centerX" secondItem="Dfj-eL-XMe" secondAttribute="centerX" id="X0i-L3-TH7"/>
-                            <constraint firstItem="Ie5-FG-EPc" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="10" id="l6M-bL-aal"/>
+                            <constraint firstItem="VqC-o9-CnJ" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="120" id="TR8-d0-cTa"/>
+                            <constraint firstItem="eLJ-KT-shR" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="21" id="VJk-mY-R7i"/>
+                            <constraint firstAttribute="centerX" secondItem="eLJ-KT-shR" secondAttribute="centerX" constant="-0.5" id="Xr8-oa-unc"/>
+                            <constraint firstItem="Ie5-FG-EPc" firstAttribute="top" secondItem="aVz-aE-EfJ" secondAttribute="bottom" constant="50" id="l6M-bL-aal"/>
                             <constraint firstAttribute="centerX" secondItem="VqC-o9-CnJ" secondAttribute="centerX" id="oby-Vc-QR6"/>
                         </constraints>
                     </view>
@@ -190,7 +198,6 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="VqC-o9-CnJ" id="DNG-GA-6tI"/>
-                        <outlet property="searchBar" destination="Dfj-eL-XMe" id="eZG-2b-oDR"/>
                         <outlet property="searchDisplayController" destination="ZIR-hm-U6D" id="q6W-V5-FGw"/>
                         <outlet property="segmentedControl" destination="Ie5-FG-EPc" id="fki-mO-S6Q"/>
                     </connections>
@@ -199,7 +206,6 @@
                 <searchDisplayController id="ZIR-hm-U6D">
                     <connections>
                         <outlet property="delegate" destination="YUY-Bn-RpU" id="ssl-9O-CRb"/>
-                        <outlet property="searchBar" destination="Dfj-eL-XMe" id="wc2-9Y-ycn"/>
                         <outlet property="searchContentsController" destination="YUY-Bn-RpU" id="kCp-Ih-CK0"/>
                         <outlet property="searchResultsDataSource" destination="YUY-Bn-RpU" id="6Nz-oL-IRA"/>
                         <outlet property="searchResultsDelegate" destination="YUY-Bn-RpU" id="BDH-78-XyX"/>

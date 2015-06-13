@@ -34,6 +34,7 @@
 		CFE362671B2B967F003323A7 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3625C1B2B967F003323A7 /* AFURLRequestSerialization.m */; };
 		CFE362681B2B967F003323A7 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3625E1B2B967F003323A7 /* AFURLResponseSerialization.m */; };
 		CFE362691B2B967F003323A7 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362601B2B967F003323A7 /* AFURLSessionManager.m */; };
+		CFE3626C1B2BCBF0003323A7 /* Pin.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3626B1B2BCBF0003323A7 /* Pin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,8 @@
 		CFE3625E1B2B967F003323A7 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		CFE3625F1B2B967F003323A7 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		CFE362601B2B967F003323A7 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		CFE3626A1B2BCBF0003323A7 /* Pin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pin.h; sourceTree = "<group>"; };
+		CFE3626B1B2BCBF0003323A7 /* Pin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 				CFE362121B2B83C6003323A7 /* TherapyViewController.m */,
 				CFE362141B2B83D6003323A7 /* GetHelpViewController.h */,
 				CFE362151B2B83D6003323A7 /* GetHelpViewController.m */,
+				CFE3626A1B2BCBF0003323A7 /* Pin.h */,
+				CFE3626B1B2BCBF0003323A7 /* Pin.m */,
 				CFE362171B2B83E6003323A7 /* ForumsViewController.h */,
 				CFE362181B2B83E6003323A7 /* ForumsViewController.m */,
 				CFE3621A1B2B8412003323A7 /* OptionsTableView.h */,
@@ -338,6 +343,7 @@
 				CFE362641B2B967F003323A7 /* AFNetworkReachabilityManager.m in Sources */,
 				CFE3621F1B2B8821003323A7 /* Entry.m in Sources */,
 				CFE3620D1B2B837B003323A7 /* GeneralInfoViewController.m in Sources */,
+				CFE3626C1B2BCBF0003323A7 /* Pin.m in Sources */,
 				CFE362651B2B967F003323A7 /* AFSecurityPolicy.m in Sources */,
 				CFE3621C1B2B8412003323A7 /* OptionsTableView.m in Sources */,
 				CFE362671B2B967F003323A7 /* AFURLRequestSerialization.m in Sources */,

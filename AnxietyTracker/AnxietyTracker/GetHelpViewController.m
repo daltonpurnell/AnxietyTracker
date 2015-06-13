@@ -8,21 +8,141 @@
 
 #import "GetHelpViewController.h"
 
-@interface GetHelpViewController ()
+@interface GetHelpViewController () {
+    
+    MKLocalSearch *localSearch;
+    MKLocalSearchResponse *results;
+}
 
 @end
 
 @implementation GetHelpViewController
+@synthesize matchingItems;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    self.mapView.showsUserLocation = YES;
+    self.mapView.showsPointsOfInterest = YES;
+    self.mapView.delegate = self;
+    locationManager = [[CLLocationManager alloc]init];
+    locationManager.delegate = self;
+    if ([locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [locationManager requestWhenInUseAuthorization];
+    }
+    [locationManager startUpdatingLocation];
+    
+    MKUserLocation *userLocation = self.mapView.userLocation;
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.location.coordinate, 20000, 20000);
+    
+    [self.mapView setRegion:region animated:YES];
+    
+}
+- (IBAction)searchButtonTapped:(id)sender {
+    
+    [self getLocalSearchResults];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)getLocalSearchResults {
+if (self.segmentedControl.selectedSegmentIndex==0) {
+    
+    self.annotationView = [[MKAnnotationView alloc] init];
+    
+//    // This cancels any previous searches
+    [localSearch cancel];
+    
+    // This is to perform a new search
+    MKLocalSearchRequest *request = [MKLocalSearchRequest new];
+    request.naturalLanguageQuery = @"Psychiatrist";
+    request.region = self.mapView.region;
+    
+    if (!matchingItems) {
+        matchingItems = [[NSMutableArray alloc]init];
+    } else{
+        [matchingItems removeAllObjects];
+        [self.mapView removeAnnotations:self.mapView.annotations];
+    }
+    
+    // Not sure exactly what this does
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    localSearch = [[MKLocalSearch alloc] initWithRequest:request];
+    
+    [localSearch startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error) {
+        
+        if (response.mapItems.count == 0)
+            NSLog(@"No Matches");
+        else
+            for (MKMapItem *item in response.mapItems)
+            {
+                //                NSLog(@"name = %@", item.placemark.addressDictionary);
+                //                [matchingItems addObject:item];
+                
+                Pin *annotation = [[Pin alloc]init];
+                annotation.coordinate = item.placemark.coordinate;
+                annotation.title = item.name;
+                NSString *address = [item.placemark.addressDictionary objectForKey:@"Street"];
+                NSString *neighborhood = [item.placemark.addressDictionary objectForKey:@"SubLocality"];
+                annotation.subtitle = [NSString stringWithFormat:@"%@ - %@", address, neighborhood];
+                [self.mapView addAnnotation:annotation];
+            }
+
+        }];
+} else {
+    
+    self.annotationView = [[MKAnnotationView alloc] init];
+    
+    //    // This cancels any previous searches
+    [localSearch cancel];
+    
+    // This is to perform a new search
+    MKLocalSearchRequest *request = [MKLocalSearchRequest new];
+    request.naturalLanguageQuery = @"Mental Therapy";
+    request.region = self.mapView.region;
+    
+    if (!matchingItems) {
+        matchingItems = [[NSMutableArray alloc]init];
+    } else{
+        [matchingItems removeAllObjects];
+        [self.mapView removeAnnotations:self.mapView.annotations];
+    }
+    
+    // Not sure exactly what this does
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    localSearch = [[MKLocalSearch alloc] initWithRequest:request];
+    
+    [localSearch startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error) {
+        
+        if (response.mapItems.count == 0)
+            NSLog(@"No Matches");
+        else
+            for (MKMapItem *item in response.mapItems)
+            {
+                //                NSLog(@"name = %@", item.placemark.addressDictionary);
+                //                [matchingItems addObject:item];
+                
+                Pin *annotation = [[Pin alloc]init];
+                annotation.coordinate = item.placemark.coordinate;
+                annotation.title = item.name;
+                NSString *address = [item.placemark.addressDictionary objectForKey:@"Street"];
+                NSString *neighborhood = [item.placemark.addressDictionary objectForKey:@"SubLocality"];
+                annotation.subtitle = [NSString stringWithFormat:@"%@ - %@", address, neighborhood];
+                [self.mapView addAnnotation:annotation];
+            }
+        
+        }];
+
+    }
 }
+
+-(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
+    
+    self.mapView.centerCoordinate = userLocation.location.coordinate;
+    
+}
+
 
 /*
 #pragma mark - Navigation

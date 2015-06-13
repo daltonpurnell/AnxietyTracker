@@ -9,10 +9,16 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "Pin.h"
 
-@interface GetHelpViewController : UIViewController
+//#define kGOOGLE_API_KEY @"AIzaSyBDqG6KUFNfeCcwIPAh9GYLAzycDIF8TXg"
+
+@interface GetHelpViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate> {
+    CLLocationManager *locationManager;
+}
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
-@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property(nonatomic,retain)MKAnnotationView *annotationView;
+@property(strong, nonatomic)NSMutableArray *matchingItems;
 
 @end
