@@ -34,6 +34,7 @@
 		CFE362681B2B967F003323A7 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3625E1B2B967F003323A7 /* AFURLResponseSerialization.m */; };
 		CFE362691B2B967F003323A7 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362601B2B967F003323A7 /* AFURLSessionManager.m */; };
 		CFE3626C1B2BCBF0003323A7 /* Pin.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE3626B1B2BCBF0003323A7 /* Pin.m */; };
+		CFE362981B2C7334003323A7 /* CustomForumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE362971B2C7334003323A7 /* CustomForumCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,8 @@
 		CFE362601B2B967F003323A7 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		CFE3626A1B2BCBF0003323A7 /* Pin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pin.h; sourceTree = "<group>"; };
 		CFE3626B1B2BCBF0003323A7 /* Pin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pin.m; sourceTree = "<group>"; };
+		CFE362961B2C7334003323A7 /* CustomForumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomForumCell.h; sourceTree = "<group>"; };
+		CFE362971B2C7334003323A7 /* CustomForumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomForumCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 				CFE3626B1B2BCBF0003323A7 /* Pin.m */,
 				CFE362171B2B83E6003323A7 /* ForumsViewController.h */,
 				CFE362181B2B83E6003323A7 /* ForumsViewController.m */,
+				CFE362961B2C7334003323A7 /* CustomForumCell.h */,
+				CFE362971B2C7334003323A7 /* CustomForumCell.m */,
 				CFE3621A1B2B8412003323A7 /* OptionsTableView.h */,
 				CFE3621B1B2B8412003323A7 /* OptionsTableView.m */,
 				CFE361F21B2B810C003323A7 /* Images.xcassets */,
@@ -331,6 +336,7 @@
 				CFE362131B2B83C6003323A7 /* TherapyViewController.m in Sources */,
 				CFE362101B2B83B1003323A7 /* TrackViewController.m in Sources */,
 				CFE362691B2B967F003323A7 /* AFURLSessionManager.m in Sources */,
+				CFE362981B2C7334003323A7 /* CustomForumCell.m in Sources */,
 				CFE362481B2B9339003323A7 /* CustomEntryCell.m in Sources */,
 				CFE362661B2B967F003323A7 /* AFURLConnectionOperation.m in Sources */,
 				CFE362621B2B967F003323A7 /* AFHTTPRequestOperationManager.m in Sources */,
