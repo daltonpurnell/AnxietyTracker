@@ -77,8 +77,6 @@ if (self.segmentedControl.selectedSegmentIndex==0) {
         else
             for (MKMapItem *item in response.mapItems)
             {
-                //                NSLog(@"name = %@", item.placemark.addressDictionary);
-                //                [matchingItems addObject:item];
                 
                 Pin *annotation = [[Pin alloc]init];
                 annotation.coordinate = item.placemark.coordinate;
@@ -120,8 +118,6 @@ if (self.segmentedControl.selectedSegmentIndex==0) {
         else
             for (MKMapItem *item in response.mapItems)
             {
-                //                NSLog(@"name = %@", item.placemark.addressDictionary);
-                //                [matchingItems addObject:item];
                 
                 Pin *annotation = [[Pin alloc]init];
                 annotation.coordinate = item.placemark.coordinate;
