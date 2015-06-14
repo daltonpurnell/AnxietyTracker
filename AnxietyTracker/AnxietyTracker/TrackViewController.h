@@ -11,8 +11,11 @@
 #import "Appearance.h"
 #import "EntryController.h"
 #import "EntryDetailViewController.h"
+#import "JBLineChartView.h"
 
-@interface TrackViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@interface TrackViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,JBLineChartViewDelegate, JBLineChartViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet JBLineChartView *lineChartView;
 
 @end

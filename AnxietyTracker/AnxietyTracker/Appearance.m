@@ -33,6 +33,8 @@
     
     [[UISegmentedControl appearance] setTintColor:[UIColor colorWithRed:141/255.0 green:148/255.0 blue:211/255.0 alpha:1]];
     
+//    [[UIView appearance] setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"candles.jpg"]]];
+    
 
 }
 

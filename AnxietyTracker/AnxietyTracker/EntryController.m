@@ -50,6 +50,7 @@ static NSString * const AllEntriesKey = @"allEntries";
     return fetchedObjects;
 }
 
+
 #pragma mark - Update
 
 - (void)save {

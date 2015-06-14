@@ -19,11 +19,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-//    self.tableView.delegate = self;
-//    self.tableView.dataSource = self;
+    self.lineChartView.dataSource = self;
+    self.lineChartView.delegate = self;
+//    [self.view addSubview:self.lineChartView];
     
-    [Appearance initializeAppearanceDefaults];
-    
+    self.lineChartView.backgroundColor = [UIColor grayColor];
+    [self.lineChartView reloadData];
     
 }
 
@@ -33,12 +34,72 @@
 }
 
 
+#pragma mark - graph view data source and delegate methods
+
+- (NSUInteger)numberOfLinesInLineChartView:(JBLineChartView *)lineChartView {
+    
+    return 1;
+}
+
+
+- (NSUInteger)lineChartView:(JBLineChartView *)lineChartView numberOfVerticalValuesAtLineIndex:(NSUInteger)lineIndex {
+    
+    return 10;
+}
+
+- (CGFloat)lineChartView:(JBLineChartView *)lineChartView verticalValueForHorizontalIndex:(NSUInteger)horizontalIndex atLineIndex:(NSUInteger)lineIndex
+{
+    return 5;
+    
+//    return [EntryController sharedInstance].entries[lineIndex];
+}
+
+- (BOOL)lineChartView:(JBLineChartView *)lineChartView smoothLineAtLineIndex:(NSUInteger)lineIndex
+{
+    return lineIndex == JBLineChartViewLineStyleSolid;
+}
+
+
+- (UIColor *)lineChartView:(JBLineChartView *)lineChartView colorForLineAtLineIndex:(NSUInteger)lineIndex
+{
+    return [UIColor grayColor];
+}
+
+- (UIColor *)lineChartView:(JBLineChartView *)lineChartView fillColorForLineAtLineIndex:(NSUInteger)lineIndex
+{
+    return [UIColor grayColor];
+}
+
+- (CGFloat)lineChartView:(JBLineChartView *)lineChartView widthForLineAtLineIndex:(NSUInteger)lineIndex
+{
+    return 4.0;
+}
+
+- (JBLineChartViewLineStyle)lineChartView:(JBLineChartView *)lineChartView lineStyleForLineAtLineIndex:(NSUInteger)lineIndex
+{
+    return JBLineChartViewLineStyleSolid;
+}
+
+- (void)setMinimumValue:(CGFloat)minimumValue {
+    
+    minimumValue = 0;
+}
+- (void)setMaximumValue:(CGFloat)maximumValue {
+    
+    maximumValue = 10;
+}
+
 #pragma mark - table view data source and delegate methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     return [EntryController sharedInstance].entries.count;
 //    return 1;
+}
+
+- (CGFloat)lineChartView:(JBLineChartView *)lineChartView dotRadiusForDotAtHorizontalIndex:(NSUInteger)horizontalIndex atLineIndex:(NSUInteger)lineIndex {
+    
+    return 8;
 }
 
 

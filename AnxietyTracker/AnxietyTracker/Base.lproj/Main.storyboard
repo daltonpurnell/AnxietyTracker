@@ -103,13 +103,25 @@
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="tUG-az-UGk"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ih9-RB-WO8" customClass="JBLineChartView">
+                                <rect key="frame" x="16" y="72" width="568" height="263"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="263" id="d4I-Uq-tK3"/>
+                                    <constraint firstAttribute="width" constant="568" id="p7R-66-0Ce"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="59b-7A-Caf" secondAttribute="trailing" constant="-16" id="9vp-aR-43D"/>
+                            <constraint firstItem="Ih9-RB-WO8" firstAttribute="trailing" secondItem="44T-XE-lz9" secondAttribute="trailingMargin" id="EaR-9a-wJo"/>
+                            <constraint firstItem="Ih9-RB-WO8" firstAttribute="top" secondItem="uo1-FK-gUf" secondAttribute="bottom" constant="8" id="EgN-NX-AXZ"/>
+                            <constraint firstAttribute="centerX" secondItem="Ih9-RB-WO8" secondAttribute="centerX" id="X1J-GR-ubt"/>
                             <constraint firstItem="59b-7A-Caf" firstAttribute="leading" secondItem="44T-XE-lz9" secondAttribute="leadingMargin" constant="-16" id="Zuz-bT-5Th"/>
                             <constraint firstItem="oBJ-Wc-jV8" firstAttribute="top" secondItem="59b-7A-Caf" secondAttribute="bottom" constant="-49" id="cb3-e4-fZz"/>
                             <constraint firstAttribute="centerX" secondItem="59b-7A-Caf" secondAttribute="centerX" id="lkZ-Ik-kcI"/>
+                            <constraint firstItem="Ih9-RB-WO8" firstAttribute="leading" secondItem="44T-XE-lz9" secondAttribute="leadingMargin" id="uEC-Bn-Vh1"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -122,6 +134,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="lineChartView" destination="Ih9-RB-WO8" id="OAQ-TP-pgv"/>
                         <outlet property="tableView" destination="59b-7A-Caf" id="gpu-qf-ias"/>
                     </connections>
                 </viewController>
