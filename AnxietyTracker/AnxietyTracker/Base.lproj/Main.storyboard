@@ -118,7 +118,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ih9-RB-WO8" customClass="BEMSimpleLineGraphView">
-                                <rect key="frame" x="20" y="72" width="560" height="263"/>
+                                <rect key="frame" x="20" y="80" width="560" height="263"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -137,7 +137,7 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="59b-7A-Caf" secondAttribute="trailing" constant="-16" id="9vp-aR-43D"/>
                             <constraint firstItem="Ih9-RB-WO8" firstAttribute="trailing" secondItem="44T-XE-lz9" secondAttribute="trailingMargin" id="EaR-9a-wJo"/>
-                            <constraint firstItem="Ih9-RB-WO8" firstAttribute="top" secondItem="uo1-FK-gUf" secondAttribute="bottom" constant="8" id="EgN-NX-AXZ"/>
+                            <constraint firstItem="Ih9-RB-WO8" firstAttribute="top" secondItem="uo1-FK-gUf" secondAttribute="bottom" constant="16" id="EgN-NX-AXZ"/>
                             <constraint firstAttribute="centerX" secondItem="Ih9-RB-WO8" secondAttribute="centerX" id="X1J-GR-ubt"/>
                             <constraint firstItem="59b-7A-Caf" firstAttribute="leading" secondItem="44T-XE-lz9" secondAttribute="leadingMargin" constant="-16" id="Zuz-bT-5Th"/>
                             <constraint firstItem="oBJ-Wc-jV8" firstAttribute="top" secondItem="59b-7A-Caf" secondAttribute="bottom" constant="-49" id="cb3-e4-fZz"/>

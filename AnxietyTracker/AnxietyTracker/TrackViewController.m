@@ -22,8 +22,7 @@
     self.lineChartView.dataSource = self;
     self.lineChartView.delegate = self;
     
-//    self.lineChartView.backgroundColor = [UIColor grayColor];
-
+    self.lineChartView.alpha = 0.5;
     
 }
 
