@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CFB07D041BE942E00085CD0B /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB07D031BE942E00085CD0B /* BEMSimpleLineGraphView.m */; settings = {ASSET_TAGS = (); }; };
+		CFB07D0D1BE945A90085CD0B /* BEMAverageLine.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB07D061BE945A90085CD0B /* BEMAverageLine.m */; settings = {ASSET_TAGS = (); }; };
+		CFB07D0E1BE945A90085CD0B /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB07D081BE945A90085CD0B /* BEMCircle.m */; settings = {ASSET_TAGS = (); }; };
+		CFB07D0F1BE945A90085CD0B /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB07D0A1BE945A90085CD0B /* BEMLine.m */; settings = {ASSET_TAGS = (); }; };
+		CFB07D101BE945A90085CD0B /* BEMPermanentPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB07D0C1BE945A90085CD0B /* BEMPermanentPopupView.m */; settings = {ASSET_TAGS = (); }; };
 		CFE361E51B2B810C003323A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE361E41B2B810C003323A7 /* main.m */; };
 		CFE361E81B2B810C003323A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE361E71B2B810C003323A7 /* AppDelegate.m */; };
 		CFE361F11B2B810C003323A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE361EF1B2B810C003323A7 /* Main.storyboard */; };
@@ -54,6 +59,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CFB07D021BE942E00085CD0B /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
+		CFB07D031BE942E00085CD0B /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
+		CFB07D051BE945A90085CD0B /* BEMAverageLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAverageLine.h; sourceTree = "<group>"; };
+		CFB07D061BE945A90085CD0B /* BEMAverageLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAverageLine.m; sourceTree = "<group>"; };
+		CFB07D071BE945A90085CD0B /* BEMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCircle.h; sourceTree = "<group>"; };
+		CFB07D081BE945A90085CD0B /* BEMCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCircle.m; sourceTree = "<group>"; };
+		CFB07D091BE945A90085CD0B /* BEMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMLine.h; sourceTree = "<group>"; };
+		CFB07D0A1BE945A90085CD0B /* BEMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMLine.m; sourceTree = "<group>"; };
+		CFB07D0B1BE945A90085CD0B /* BEMPermanentPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPermanentPopupView.h; sourceTree = "<group>"; };
+		CFB07D0C1BE945A90085CD0B /* BEMPermanentPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPermanentPopupView.m; sourceTree = "<group>"; };
 		CFE361DF1B2B810C003323A7 /* AnxietyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnxietyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE361E31B2B810C003323A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFE361E41B2B810C003323A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -203,6 +218,16 @@
 		CFE361E21B2B810C003323A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CFB07D051BE945A90085CD0B /* BEMAverageLine.h */,
+				CFB07D061BE945A90085CD0B /* BEMAverageLine.m */,
+				CFB07D071BE945A90085CD0B /* BEMCircle.h */,
+				CFB07D081BE945A90085CD0B /* BEMCircle.m */,
+				CFB07D091BE945A90085CD0B /* BEMLine.h */,
+				CFB07D0A1BE945A90085CD0B /* BEMLine.m */,
+				CFB07D0B1BE945A90085CD0B /* BEMPermanentPopupView.h */,
+				CFB07D0C1BE945A90085CD0B /* BEMPermanentPopupView.m */,
+				CFB07D021BE942E00085CD0B /* BEMSimpleLineGraphView.h */,
+				CFB07D031BE942E00085CD0B /* BEMSimpleLineGraphView.m */,
 				CFE3624D1B2B967F003323A7 /* AFNetworking */,
 				CFE3624B1B2B9503003323A7 /* CoreLocation.framework */,
 				CFE362491B2B94FA003323A7 /* MapKit.framework */,
@@ -368,8 +393,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB07D0F1BE945A90085CD0B /* BEMLine.m in Sources */,
 				CFE362611B2B967F003323A7 /* AFHTTPRequestOperation.m in Sources */,
 				CFE362A11B2C9674003323A7 /* Model.xcdatamodeld in Sources */,
+				CFB07D101BE945A90085CD0B /* BEMPermanentPopupView.m in Sources */,
 				CFE362131B2B83C6003323A7 /* TherapyViewController.m in Sources */,
 				CFE362101B2B83B1003323A7 /* TrackViewController.m in Sources */,
 				CFE362691B2B967F003323A7 /* AFURLSessionManager.m in Sources */,
@@ -378,10 +405,12 @@
 				CFE362661B2B967F003323A7 /* AFURLConnectionOperation.m in Sources */,
 				CFE362621B2B967F003323A7 /* AFHTTPRequestOperationManager.m in Sources */,
 				CFE362C41B2CF3BE003323A7 /* JBLineChartView.m in Sources */,
+				CFB07D0D1BE945A90085CD0B /* BEMAverageLine.m in Sources */,
 				CFE361E81B2B810C003323A7 /* AppDelegate.m in Sources */,
 				CFE362641B2B967F003323A7 /* AFNetworkReachabilityManager.m in Sources */,
 				CFE362AA1B2CB0D6003323A7 /* Entry.m in Sources */,
 				CFE3620D1B2B837B003323A7 /* GeneralInfoViewController.m in Sources */,
+				CFB07D041BE942E00085CD0B /* BEMSimpleLineGraphView.m in Sources */,
 				CFE3626C1B2BCBF0003323A7 /* Pin.m in Sources */,
 				CFE362651B2B967F003323A7 /* AFSecurityPolicy.m in Sources */,
 				CFE3629E1B2C9622003323A7 /* EntryController.m in Sources */,
@@ -389,6 +418,7 @@
 				CFE362671B2B967F003323A7 /* AFURLRequestSerialization.m in Sources */,
 				CFE362681B2B967F003323A7 /* AFURLResponseSerialization.m in Sources */,
 				CFE362C31B2CF3BE003323A7 /* JBChartView.m in Sources */,
+				CFB07D0E1BE945A90085CD0B /* BEMCircle.m in Sources */,
 				CFE362C21B2CF3BE003323A7 /* JBBarChartView.m in Sources */,
 				CFE3629B1B2C9618003323A7 /* Stack.m in Sources */,
 				CFE362191B2B83E6003323A7 /* ForumsViewController.m in Sources */,
@@ -524,6 +554,7 @@
 				INFOPLIST_FILE = AnxietyTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -534,6 +565,7 @@
 				INFOPLIST_FILE = AnxietyTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -590,6 +622,7 @@
 				CFE362071B2B810C003323A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFE362081B2B810C003323A7 /* Build configuration list for PBXNativeTarget "AnxietyTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +631,7 @@
 				CFE3620A1B2B810C003323A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>93979B86-77BA-4DE6-8212-8A1BD6078952</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>AnxietyTracker</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>6605CC112CBEAECB631059CB89F6490CE8D2A3C4</key>
 		<string>https://github.com/daltonpurnell/AnxietyTracker.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>AnxietyTracker/AnxietyTracker.xcodeproj/project.xcworkspace</string>
+	<string>AnxietyTracker/AnxietyTracker.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>6605CC112CBEAECB631059CB89F6490CE8D2A3C4</key>

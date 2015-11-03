@@ -1,7 +1,7 @@
 dependencies: \
-  /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/Classes/BEMSimpleLineGraphView.m \
-  /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/Classes/BEMSimpleLineGraphView.h \
-  /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/Classes/BEMCircle.h \
-  /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/Classes/BEMLine.h \
-  /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/Classes/BEMAverageLine.h \
-  /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/Classes/BEMPermanentPopupView.h
+  /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/BEMSimpleLineGraphView.m \
+  /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/BEMSimpleLineGraphView.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/BEMCircle.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/BEMLine.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/BEMAverageLine.h \
+  /Users/djp1989/Documents/Development/PersonalProjects/AnxietyTracker/AnxietyTracker/AnxietyTracker/BEMPermanentPopupView.h
