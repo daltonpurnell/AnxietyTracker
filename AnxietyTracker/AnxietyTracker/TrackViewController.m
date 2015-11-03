@@ -43,7 +43,11 @@
 
 
 - (CGFloat)lineGraph:(BEMSimpleLineGraphView *)graph valueForPointAtIndex:(NSInteger)index {
-    return 5;
+    
+        Entry *entry = [EntryController sharedInstance].entries[index];
+    
+    
+    return [entry.rating floatValue];
 }
 
 

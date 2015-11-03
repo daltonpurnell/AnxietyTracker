@@ -16,5 +16,6 @@
 @interface TrackViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, BEMSimpleLineGraphDataSource, BEMSimpleLineGraphDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet BEMSimpleLineGraphView *lineChartView;
+@property (strong, nonatomic) Entry *entry;
 
 @end
