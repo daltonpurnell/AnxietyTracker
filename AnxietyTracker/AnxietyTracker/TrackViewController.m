@@ -22,7 +22,18 @@
     self.lineChartView.dataSource = self;
     self.lineChartView.delegate = self;
     
-    self.lineChartView.alpha = 0.5;
+    self.lineChartView.alpha = 0.7;
+    self.lineChartView.enablePopUpReport = YES;
+    self.lineChartView.colorBottom = [UIColor colorWithRed:36/255.0 green:47/255.0 blue:60/255.0 alpha:1];
+    self.lineChartView.colorTop = [UIColor colorWithRed:141/255.0 green:148/255.0 blue:211/255.0 alpha:1];
+    
+    self.lineChartView.alwaysDisplayDots = YES;
+    
+//    self.lineChartView.clipsToBounds = YES;
+//    self.lineChartView.layer.cornerRadius = 20/2.0f;
+////    self.lineChartView.layer.borderColor = [UIColor colorWithRed:193/255.0 green:193/255.0 blue:193/255.0 alpha:1].CGColor;
+//    self.lineChartView.layer.borderColor = [UIColor colorWithRed:36/255.0 green:47/255.0 blue:60/255.0 alpha:1].CGColor;
+//    self.lineChartView.layer.borderWidth = 1.0f;
     
 }
 

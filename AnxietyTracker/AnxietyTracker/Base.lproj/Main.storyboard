@@ -117,12 +117,12 @@
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="tUG-az-UGk"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ih9-RB-WO8" customClass="BEMSimpleLineGraphView">
-                                <rect key="frame" x="20" y="80" width="560" height="263"/>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ih9-RB-WO8" customClass="BEMSimpleLineGraphView">
+                                <rect key="frame" x="20" y="80" width="560" height="255"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="263" id="d4I-Uq-tK3"/>
+                                    <constraint firstAttribute="height" constant="255" id="d4I-Uq-tK3"/>
                                     <constraint firstAttribute="width" constant="568" id="p7R-66-0Ce"/>
                                 </constraints>
                                 <variation key="default">
