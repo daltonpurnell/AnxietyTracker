@@ -128,12 +128,12 @@
 		CFE362A61B2CA1D1003323A7 /* EntryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryDetailViewController.m; sourceTree = "<group>"; };
 		CFE362A81B2CB0D6003323A7 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
 		CFE362A91B2CB0D6003323A7 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
-		CFE362BC1B2CF3BE003323A7 /* JBBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartView.h; sourceTree = "<group>"; };
-		CFE362BD1B2CF3BE003323A7 /* JBBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBarChartView.m; sourceTree = "<group>"; };
-		CFE362BE1B2CF3BE003323A7 /* JBChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartView.h; sourceTree = "<group>"; };
-		CFE362BF1B2CF3BE003323A7 /* JBChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartView.m; sourceTree = "<group>"; };
-		CFE362C01B2CF3BE003323A7 /* JBLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartView.h; sourceTree = "<group>"; };
-		CFE362C11B2CF3BE003323A7 /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartView.m; sourceTree = "<group>"; };
+		CFE362BC1B2CF3BE003323A7 /* JBBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JBBarChartView.h; path = Classes/JBBarChartView.h; sourceTree = "<group>"; };
+		CFE362BD1B2CF3BE003323A7 /* JBBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JBBarChartView.m; path = Classes/JBBarChartView.m; sourceTree = "<group>"; };
+		CFE362BE1B2CF3BE003323A7 /* JBChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JBChartView.h; path = Classes/JBChartView.h; sourceTree = "<group>"; };
+		CFE362BF1B2CF3BE003323A7 /* JBChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JBChartView.m; path = Classes/JBChartView.m; sourceTree = "<group>"; };
+		CFE362C01B2CF3BE003323A7 /* JBLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JBLineChartView.h; path = Classes/JBLineChartView.h; sourceTree = "<group>"; };
+		CFE362C11B2CF3BE003323A7 /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JBLineChartView.m; path = Classes/JBLineChartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,7 +206,6 @@
 				CFE3629F1B2C9674003323A7 /* Model.xcdatamodeld */,
 				CFE362991B2C9618003323A7 /* Stack.h */,
 				CFE3629A1B2C9618003323A7 /* Stack.m */,
-				CFE362BB1B2CF3BE003323A7 /* Classes */,
 				CFE361F21B2B810C003323A7 /* Images.xcassets */,
 				CFE361F41B2B810C003323A7 /* LaunchScreen.xib */,
 				CFE361EF1B2B810C003323A7 /* Main.storyboard */,
@@ -218,6 +217,13 @@
 		CFE361E21B2B810C003323A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CFE362BB1B2CF3BE003323A7 /* Classes */,
+				CFE362BC1B2CF3BE003323A7 /* JBBarChartView.h */,
+				CFE362BD1B2CF3BE003323A7 /* JBBarChartView.m */,
+				CFE362BE1B2CF3BE003323A7 /* JBChartView.h */,
+				CFE362BF1B2CF3BE003323A7 /* JBChartView.m */,
+				CFE362C01B2CF3BE003323A7 /* JBLineChartView.h */,
+				CFE362C11B2CF3BE003323A7 /* JBLineChartView.m */,
 				CFB07D051BE945A90085CD0B /* BEMAverageLine.h */,
 				CFB07D061BE945A90085CD0B /* BEMAverageLine.m */,
 				CFB07D071BE945A90085CD0B /* BEMCircle.h */,
@@ -283,12 +289,6 @@
 		CFE362BB1B2CF3BE003323A7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CFE362BC1B2CF3BE003323A7 /* JBBarChartView.h */,
-				CFE362BD1B2CF3BE003323A7 /* JBBarChartView.m */,
-				CFE362BE1B2CF3BE003323A7 /* JBChartView.h */,
-				CFE362BF1B2CF3BE003323A7 /* JBChartView.m */,
-				CFE362C01B2CF3BE003323A7 /* JBLineChartView.h */,
-				CFE362C11B2CF3BE003323A7 /* JBLineChartView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
